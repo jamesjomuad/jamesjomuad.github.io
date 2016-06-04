@@ -9,8 +9,36 @@
 	
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/ratchet/dist/js/ratchet.js"></script>
+	<script src="bower_components/trianglify/dist/trianglify.min.js"></script>
 </head>
 	<body>
+
+		<div class="container">
+			<!-- header -->
+			<header>
+				<!-- <div class="fb-profile">
+					<img align="left" class="fb-image-lg" src="http://lorempixel.com/850/280/nightlife/5/" alt="Profile image example"/>
+					<img align="left" class="fb-image-profile thumbnail" src="http://lorempixel.com/180/180/people/9/" alt="Profile image example"/>
+					<div class="fb-profile-text">
+						<h1>Eli Macy</h1>
+						<p>Girls just wanna go fun.</p>
+					</div>
+				</div> -->
+			</header>
+			
+		</div>
 		
+		<script>
+			$(document).ready(function(){
+				var pattern = Trianglify({
+					height:			window.innerHeight,
+					width: 			$('body').innerWidth(),
+					cell_size: 	30 + Math.random() * 100
+				});
+
+				//document.body.appendChild(pattern.canvas());
+				$('body').append(pattern.canvas());
+			});
+		</script>
 	</body>
 </html>
