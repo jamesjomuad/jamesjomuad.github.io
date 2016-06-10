@@ -1,10 +1,12 @@
-body, html{
-	background: #630990; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #630990 , #C3121D); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #630990 , #C3121D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	display:block;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-}
+body, html{display:block; position:relative; min-height:100%; margin:0; padding:0; overflow-x:hidden; height:100%}
+
+#cover{ overflow:hidden;  position:relative;  min-height:100%}
+#cover canvas{position:absolute; z-index:-1}
+#cover .profile{position:absolute;bottom: 55px;width:100%;}
+#cover .profile .thumbnail{}
+#cover .profile .profile-text{padding: 0 30px;}
+#cover .profile .profile-text h1{font-weight: bold;}
+
+#intro{}
+
+#about{background:#43cea2; /* fallback for old browsers */background:-webkit-linear-gradient(to left,#43cea2,#185a9d); /* Chrome 10-25,Safari 5.1-6 */background:linear-gradient(to left,#43cea2,#185a9d); /* W3C,IE 10+/ Edge,Firefox 16+,Chrome 26+,Opera 12+,Safari 7+*/min-height:100%}

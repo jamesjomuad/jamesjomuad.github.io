@@ -13,20 +13,57 @@
 </head>
 	<body>
 
-		<div class="container">
-			<!-- header -->
-			<header>
-				<!-- <div class="fb-profile">
-					<img align="left" class="fb-image-lg" src="http://lorempixel.com/850/280/nightlife/5/" alt="Profile image example"/>
-					<img align="left" class="fb-image-profile thumbnail" src="http://lorempixel.com/180/180/people/9/" alt="Profile image example"/>
-					<div class="fb-profile-text">
-						<h1>Eli Macy</h1>
-						<p>Girls just wanna go fun.</p>
+		<header id="cover">
+			<div class="profile">
+				<div class="container">
+					<img align="left" class="thumbnail pull-left" src="https://placeimg.com/180/180/people" alt="Profile image example"/>
+					<div class="profile-text pull-left">
+						<h1>James Jomuad</h1>
+						<p>Boys just wanna go fun.</p>
 					</div>
-				</div> -->
-			</header>
-			
-		</div>
+				</div>
+			</div>
+		</header>
+		
+		<section id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>Profile</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">
+						<p>We are a group of different individuals by profession who are willing to support inventors that our current Government can't support. We are and we will address the issues on global warming that others did not realize that it's the greatest threat to this Planet.</p>
+					</div>
+					<div class="col-lg-4">
+						<p>Act now, climate change will rapidly change the world we depend upon, leaving our children and grandchildren generation with a very different world. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>About</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">
+						<p>We are a group of different individuals by profession who are willing to support inventors that our current Government can't support. We are and we will address the issues on global warming that others did not realize that it's the greatest threat to this Planet.</p>
+					</div>
+					<div class="col-lg-4">
+						<p>Act now, climate change will rapidly change the world we depend upon, leaving our children and grandchildren generation with a very different world. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 		
 		<script>
 			$(document).ready(function(){
@@ -37,7 +74,7 @@
 				});
 
 				//document.body.appendChild(pattern.canvas());
-				$('body').append(pattern.canvas());
+				$('body header').prepend(pattern.canvas());
 			});
 		</script>
 	</body>
