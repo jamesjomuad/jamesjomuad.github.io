@@ -1,11 +1,19 @@
 body, html{display:block; position:relative; min-height:100%; margin:0; padding:0; overflow-x:hidden; height:100%}
 
-#cover{ overflow:hidden;  position:relative;  min-height:100%}
-#cover canvas{position:absolute; z-index:-1}
-#cover .profile{position:absolute;bottom: 55px;width:100%;}
-#cover .profile .thumbnail{}
-#cover .profile .profile-text{padding: 0 30px;}
-#cover .profile .profile-text h1{font-weight: bold;}
+#cover{overflow:hidden;min-height:100%;}
+#cover canvas{z-index:-1;}
+#cover .profile{top: 34%;width:100%;position: absolute;}
+#cover .profile .thumbnail{
+    border-radius: 95px;
+    margin: 0 auto;
+}
+#cover .profile .profile-text{padding: 0 30px;clear: both;margin: 0 auto;display: block;float: none;position: relative;color: #000;}
+#cover .profile .profile-text h1{font-weight: bold;color: #383838;text-shadow: 0px 1px 0px #000000;}
+#cover .profile .profile-text p{
+    color: #fff;
+    font-family: cursive;
+    font-size: 20px;
+}
 
 #intro{}
 
@@ -13,7 +21,7 @@ body, html{display:block; position:relative; min-height:100%; margin:0; padding:
 
 #colors{
     min-height: 100%;
-    background: #131313;
+    background: #ffffff;
 }
 #colors .jcolor{
     display: block;
