@@ -10,7 +10,7 @@ body, html{display:block; position:relative; min-height:100%; margin:0; padding:
 #cover .profile .profile-text{padding: 0 30px;clear: both;margin: 0 auto;display: block;float: none;position: relative;color: #000;}
 #cover .profile .profile-text h1{font-weight: bold;color: #383838;text-shadow: 0px 1px 0px #000000;}
 #cover .profile .profile-text p{
-    color: #fff;
+    color: #328ad2;
     font-family: cursive;
     font-size: 20px;
 }
