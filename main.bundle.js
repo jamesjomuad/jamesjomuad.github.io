@@ -44,6 +44,8 @@ module.exports = "<div id=\"sidebar-wrapper\">\n    <app-sidebar-left></app-side
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -53,6 +55,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 var AppComponent = (function () {
     function AppComponent() {
@@ -85,11 +88,13 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__works_works_component__ = __webpack_require__("../../../../../src/app/works/works.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/page-not-found/page-not-found.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__sidebar_left_sidebar_left_component__ = __webpack_require__("../../../../../src/app/sidebar-left/sidebar-left.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__works_works_component__ = __webpack_require__("../../../../../src/app/works/works.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__sidebar_left_sidebar_left_component__ = __webpack_require__("../../../../../src/app/sidebar-left/sidebar-left.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__portfolio_service__ = __webpack_require__("../../../../../src/app/portfolio.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -104,18 +109,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var appRoutes = [
     {
         path: '',
-        component: __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */],
+        component: __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */],
         data: { title: 'Home' }
     },
     {
         path: 'works',
-        component: __WEBPACK_IMPORTED_MODULE_4__works_works_component__["a" /* WorksComponent */],
+        component: __WEBPACK_IMPORTED_MODULE_5__works_works_component__["a" /* WorksComponent */],
         data: { title: 'Project List' }
     },
-    { path: '**', component: __WEBPACK_IMPORTED_MODULE_5__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_6__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -125,18 +132,19 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_4__works_works_component__["a" /* WorksComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__sidebar_left_sidebar_left_component__["a" /* SidebarLeftComponent */]
+            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__works_works_component__["a" /* WorksComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__sidebar_left_sidebar_left_component__["a" /* SidebarLeftComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot(appRoutes)
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */]
         ],
-        providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_9__portfolio_service__["a" /* PortfolioService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -152,7 +160,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "[app-home]{}\r\n\r\n.banner{\r\n    padding: 100px;\r\n    background: #EBEBEB;\r\n    border-top: 1px solid #fff;\r\n    border-bottom: 1px solid #fff;\r\n}\r\n\r\n.banner h5{    \r\n    font-weight: bold;\r\n    margin: 15px 0;\r\n}\r\n\r\n.banner h2 .text-primary{\r\n    font-size: 50px;\r\n    height: 100vh;\r\n    text-shadow: 0 1px #fff;\r\n    font-weight: bold;\r\n}\r\n\r\n.featured{\r\n    background: #fff;\r\n    color: #000;\r\n    height: 100vh;\r\n}\r\n\r\n.featured ul{\r\n    padding: 0;\r\n    margin: 0;\r\n    min-height: 50px;\r\n    width: 100%;\r\n}\r\n.featured ul li{\r\n    list-style: none;\r\n    background: #338ed5;\r\n    width: 32.3%;\r\n    height: 230px;\r\n    display: inline-block;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    float: left;\r\n    margin: 5px;\r\n    position: relative;\r\n    background-size: cover;\r\n}\r\n\r\n.featured ul li .inner{\r\n    position: absolute;\r\n    bottom: 0;\r\n    width: 100%;\r\n}\r\n\r\n.featured ul li a{\r\n    display: block;\r\n    color: #fff;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-size: 20px;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    vertical-align: middle;\r\n    padding: 0 15px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.featured ul li a.type{\r\n    font-size: 15px; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */\r\n    background: linear-gradient(to right, rgba(51,116,213,1) 0%,rgba(51,116,213,0) 68%,rgba(51,116,213,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */\r\n    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3374d5', endColorstr='#003374d5',GradientType=1 ); /* IE6-9 */\r\n}\r\n\r\n.featured ul li:hover a.title{\r\n    background: #dd772c;\r\n    transition: all 200ms ease-in-out;\r\n}", ""]);
+exports.push([module.i, "[app-home]{}\r\n\r\n.banner{\r\n    padding: 100px;\r\n    border-top: 1px solid #fff;\r\n    border-bottom: 1px solid #fff;\r\n    background: #00C9FF;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */\r\n    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   \r\n}\r\n\r\n.banner h5{    \r\n    font-weight: bold;\r\n    margin: 15px 0;\r\n}\r\n\r\n.banner h2 .text-primary{\r\n    font-size: 50px;\r\n    height: 100vh;\r\n    text-shadow: 0 1px #fff;\r\n    font-weight: bold;\r\n}\r\n\r\n.featured{\r\n    color: #000;\r\n    height: 100vh;\r\n}\r\n\r\n.featured ul{\r\n    padding: 0;\r\n    margin: 0;\r\n    min-height: 50px;\r\n    width: 100%;\r\n}\r\n\r\n.featured ul li{\r\n    list-style: none;\r\n    background: #338ed5;\r\n    width: 32.3%;\r\n    height: 230px;\r\n    display: inline-block;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    float: left;\r\n    margin: 5px;\r\n    position: relative;\r\n    background-size: cover!important;\r\n}\r\n\r\n.featured ul li .inner{\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    background: rgba(0, 0, 0, 0.77);\r\n    transition: all 200ms ease-in-out;\r\n}\r\n\r\n.featured ul li:hover .inner{\r\n    background: none;\r\n}\r\n\r\n.featured ul li a{\r\n    display: block;\r\n    color: #fff;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-size: 20px;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    vertical-align: middle;\r\n    padding: 0 15px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.featured ul li a.type{\r\n    font-size: 15px; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */\r\n    background: linear-gradient(to right, rgba(51,116,213,1) 0%,rgba(51,116,213,0) 68%,rgba(51,116,213,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */\r\n    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3374d5', endColorstr='#003374d5',GradientType=1 ); /* IE6-9 */\r\n}\r\n\r\n.featured ul li a.title{\r\n    text-align: center;\r\n}\r\n\r\n.featured ul li:hover a.title{\r\n    background: #dd772c;\r\n    transition: all 200ms ease-in-out;\r\n}", ""]);
 
 // exports
 
@@ -165,7 +173,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"flex-wrapper banner\">\n    <div>\n        <h2>I am <span class=\"text-primary\">James Jomuad</span></h2>\n        <h5>Full Stock Web Developer</h5>\n        <p>Quisque eu eleifend sapien. Sed et eros non nibh eleifend tempus. Sed rhoncus mauris in tellus viverra, in molestie turpis feugiat. Fusce massa massa, convallis ut elit ac, dictum porta odio. Aenean viverra neque id turpis maximus cursus. Etiam vitae mi eros. Duis vestibulum orci ex, in vulputate leo iaculis eget. Suspendisse suscipit tortor sit amet neque.</p>\n    </div>\n</header>\n\n<section class=\"featured\">\n    <div class=\"container\">\n        <h2><b>Featured</b></h2>\n        <ul>\n            <li [style.background]=\"'url('+features[0].imgPath+')'\">\n                <div class=\"inner\">\n                    <a href=\"#\" class=\"type\"><small>Web Application</small></a>\n                    <a href=\"#\" class=\"title\">Slyce Gateway</a>\n                </div>\n            </li>\n            <li>\n                <div class=\"inner\">\n                    <a href=\"#\" class=\"type\"><small>Web Application</small></a>\n                    <a href=\"#\" class=\"title\">Email Invoice</a>\n                </div>\n            </li>\n            <li>\n                <div class=\"inner\">\n                    <a href=\"#\" class=\"type\"><small>Web Application</small></a>\n                    <a href=\"#\" class=\"title\">App Challenge</a>\n                </div>\n            </li>\n            <li>\n                <div class=\"inner\">\n                    <a href=\"#\" class=\"type\"><small>Design</small></a>\n                    <a href=\"#\" class=\"title\">Kusina Uno</a>\n                </div>\n            </li>\n            <li>\n                <div class=\"inner\">\n                    <a href=\"#\" class=\"type\"><small>Aerial Photography</small></a>\n                    <a href=\"#\" class=\"title\">Ginatilan</a>\n                </div>\n            </li>\n            <li>\n                <div class=\"inner\">\n                    <a href=\"#\" class=\"type\"><small>Video Composition</small></a>\n                    <a href=\"#\" class=\"title\">Ginatilan</a>\n                </div>\n            </li>\n        </ul>\n        <br>\n        {{features}}\n    </div>\n</section>"
+module.exports = "<header class=\"flex-wrapper banner\">\n    <div>\n        <h2>I am <span class=\"text-primary\">James Jomuad</span></h2>\n        <h5>Full Stock Web Developer</h5>\n        <p>Quisque eu eleifend sapien. Sed et eros non nibh eleifend tempus. Sed rhoncus mauris in tellus viverra, in molestie turpis feugiat. Fusce massa massa, convallis ut elit ac, dictum porta odio. Aenean viverra neque id turpis maximus cursus. Etiam vitae mi eros. Duis vestibulum orci ex, in vulputate leo iaculis eget. Suspendisse suscipit tortor sit amet neque.</p>\n    </div>\n</header>\n\n<section class=\"featured\">\n    <div class=\"container\">\n        <h2><b>Featured</b></h2>\n        <ul>\n            <li *ngFor=\"let feature of features\" [style.background]=\"setFeatureBackground(feature.thumbnail)\">\n                <div class=\"inner\">\n                    <a href=\"#\" class=\"type\"><small>{{feature.tag}}</small></a>\n                    <a href=\"#\" class=\"title\">{{feature.name}}</a>\n                </div>\n            </li>\n        </ul>\n        <br>\n        \n    </div>\n</section>"
 
 /***/ }),
 
@@ -175,6 +183,7 @@ module.exports = "<header class=\"flex-wrapper banner\">\n    <div>\n        <h2
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__portfolio_service__ = __webpack_require__("../../../../../src/app/portfolio.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -185,9 +194,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HomeComponent = (function () {
-    function HomeComponent() {
-        this.category = {
+    function HomeComponent(portfolioService) {
+        this.portfolioService = portfolioService;
+        this.tag = {
             a: 'Design',
             b: 'Responsive',
             c: 'Ecommerce',
@@ -196,21 +207,19 @@ var HomeComponent = (function () {
             f: 'Web Application',
             g: 'Graphics',
             h: 'Rest API',
+            i: 'Photography',
         };
-        this.features = [
-            {
-                type: this.category.f,
-                name: 'Slyce Gateway',
-                imgPath: '/assets/images/slycegateway/home.png'
-            },
-            {
-                type: this.category.h,
-                name: 'Email Invoice',
-                imgPath: '/assets/images/slycegateway/home.png'
-            }
-        ];
     }
     HomeComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.portfolioService
+            .getPortfolio()
+            .subscribe(function (response) { return _this.features = response.json(); }, function (error) { return console.log(error); });
+    };
+    HomeComponent.prototype.setFeatureBackground = function (path) {
+        if (typeof path == 'undefined')
+            return false;
+        return 'url(' + (path) + ')';
     };
     return HomeComponent;
 }());
@@ -220,9 +229,10 @@ HomeComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/home/home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/home.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__portfolio_service__["a" /* PortfolioService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__portfolio_service__["a" /* PortfolioService */]) === "function" && _a || Object])
 ], HomeComponent);
 
+var _a;
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
@@ -285,6 +295,43 @@ PageNotFoundComponent = __decorate([
 ], PageNotFoundComponent);
 
 //# sourceMappingURL=page-not-found.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/portfolio.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PortfolioService = (function () {
+    function PortfolioService(http) {
+        this.http = http;
+    }
+    PortfolioService.prototype.getPortfolio = function () {
+        return this.http.get('assets/json/portfolios.json');
+    };
+    return PortfolioService;
+}());
+PortfolioService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
+], PortfolioService);
+
+var _a;
+//# sourceMappingURL=portfolio.service.js.map
 
 /***/ }),
 
