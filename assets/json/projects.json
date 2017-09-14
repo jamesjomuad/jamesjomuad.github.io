@@ -1,0 +1,57 @@
+[{
+    "name": "Slyce Gateway",
+    "tag": "Web Application",
+    "thumbnail": "/assets/images/slycegateway/home.png",
+    "description": "SLYCE Gateway is a dashboard interface that provides merchants with payment gateway access. This web application will enable users to run sales and refunds, view reports, and use several other ancillary tools."
+  },
+  {
+    "name": "Email Invoice",
+    "tag": "Web Application",
+    "thumbnail": "/assets/images/email-invoice/home.png",
+    "description": "Create and send electronic invoices with pdf attachment & send secured link to customers. Customize with just a few clicks and get paid faster using payment page."
+  },
+  {
+    "name": "Slyce Global",
+    "tag": "Web Application",
+    "thumbnail": "/assets/images/slyce-global/VirtualTerminal.png",
+    "description": "A web application for managing merchant and customer transactions. Derived from Slyce Gateway."
+  },
+  {
+    "name": "Kusina Uno",
+    "tag": "Graphics",
+    "thumbnail": "/assets/images/kusina-uno/menu-front.jpg"
+  },
+  {
+    "name": "Kids Karate Perth",
+    "tag": "Ecommerce",
+    "thumbnail": "/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_.jpeg"
+  },
+  {
+    "name": "Salt Property",
+    "url": "http://saltproperty.com.au/",
+    "tag": "Website",
+    "thumbnail": "/assets/images/salt-property/http_saltproperty.com.au_.jpeg"
+  },
+  {
+    "name": "Ink Out",
+    "url": "http://www.inkout.com.au/",
+    "tag": "Website",
+    "thumbnail": "/assets/images/inkout/http_www.inkout.com.au_.jpeg"
+  },
+  {
+    "name": "Photography",
+    "url": "/projects/photography",
+    "tag": "Photography",
+    "thumbnail": "/assets/images/photography/ginatilan-aerial-view.jpg"
+  },
+  {
+    "name": "Biogas Technology",
+    "url": "/projects/biogas",
+    "thumbnail": "/assets/images/photography/ginatilan-aerial-view.jpg"
+    },
+    {
+      "name": "Biogas Technology",
+      "url": "/projects/biogas",
+      "thumbnail": "/assets/images/photography/ginatilan-aerial-view.jpg"
+    }
+]
