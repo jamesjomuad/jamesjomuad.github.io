@@ -158,12 +158,14 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__ = __webpack_require__("../../../../../src/app/projects/projects.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__project_project_component__ = __webpack_require__("../../../../../src/app/project/project.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__project_single_project_single_component__ = __webpack_require__("../../../../../src/app/project-single/project-single.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -188,6 +190,10 @@ var appRoutes = [
         data: { title: 'Projects' }
     },
     {
+        path: 'project/:name',
+        component: __WEBPACK_IMPORTED_MODULE_12__project_single_project_single_component__["a" /* ProjectSingleComponent */],
+    },
+    {
         path: 'about',
         component: __WEBPACK_IMPORTED_MODULE_11__about_about_component__["a" /* AboutComponent */],
         data: { title: 'About' }
@@ -208,11 +214,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_7__sidebar_left_sidebar_left_component__["a" /* SidebarLeftComponent */],
             __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__["a" /* ProjectsComponent */],
             __WEBPACK_IMPORTED_MODULE_10__project_project_component__["a" /* ProjectComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__about_about_component__["a" /* AboutComponent */]
+            __WEBPACK_IMPORTED_MODULE_11__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__project_single_project_single_component__["a" /* ProjectSingleComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */]
         ],
         providers: [__WEBPACK_IMPORTED_MODULE_8__portfolio_service__["a" /* PortfolioService */]],
@@ -395,6 +402,81 @@ var _a;
 
 /***/ }),
 
+/***/ "../../../../../src/app/project-single/project-single.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".cover{background-size: cover!important;}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/project-single/project-single.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section *ngIf=\"project\" class=\"container\">\n    <h2>{{project.name}}</h2>\n    <br\n    >\n    <div *ngIf=\"project.description\">\n        <h4>Description</h4>\n        <p>{{project.description}}</p>\n    </div>\n    <br>\n\n    <div class=\"row\">\n        <div class=\"col-xs-6 col-md-3\" *ngFor=\"let thumbnail of project.thumbnails\">\n            <a href=\"{{thumbnail}}\" target=\"_blank\" class=\"thumbnail\">\n                <div class=\"cover\" style=\"height: 200px;\" [style.background]=\"'url('+thumbnail+')'\"></div>\n            </a>\n        </div>\n    </div>\n\n    <div>\n        <h4>Tags:</h4>\n        <span class=\"badge\">{{project.tag}}</span>\n    </div>\n\n</section>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/project-single/project-single.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectSingleComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__portfolio_service__ = __webpack_require__("../../../../../src/app/portfolio.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ProjectSingleComponent = (function () {
+    function ProjectSingleComponent(route, Project) {
+        var _this = this;
+        route.params.subscribe(function (params) {
+            Project.getPortfolio()
+                .subscribe(function (response) { return _this.project = _this.getProject(params.name, response.json()); }, function (error) { return console.log(error); });
+        });
+    }
+    ProjectSingleComponent.prototype.ngOnInit = function () { };
+    ProjectSingleComponent.prototype.getProject = function (name, data) {
+        return data.filter(function (obj) {
+            return obj.url === name;
+        })[0];
+    };
+    return ProjectSingleComponent;
+}());
+ProjectSingleComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-project-single',
+        template: __webpack_require__("../../../../../src/app/project-single/project-single.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/project-single/project-single.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__portfolio_service__["a" /* PortfolioService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__portfolio_service__["a" /* PortfolioService */]) === "function" && _b || Object])
+], ProjectSingleComponent);
+
+var _a, _b;
+//# sourceMappingURL=project-single.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/project/project.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -416,7 +498,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/project/project.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrap\" [style.background]=\"setFeatureBackground(project.thumbnail)\">\n    <div class=\"inner\">\n        <a href=\"#\" class=\"type\"><small>{{project.tag}}</small></a>\n        <a routerLink=\"{{getUrl(project.url)}}\" class=\"title\">{{project.name}}</a>\n    </div>\n</div>\n"
+module.exports = "<div class=\"wrap\" [style.background]=\"setFeatureBackground(project.thumbnails)\">\n    <div class=\"inner\">\n        <a href=\"#\" class=\"type\"><small>{{project.tag}}</small></a>\n        <a routerLink=\"{{getUrl(project.url)}}\" class=\"title\">{{project.name}}</a>\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -443,12 +525,16 @@ var ProjectComponent = (function () {
     ProjectComponent.prototype.getUrl = function (url) {
         if (!url)
             return '#';
-        return url;
+        return 'project/' + url;
     };
-    ProjectComponent.prototype.setFeatureBackground = function (path) {
-        if (typeof path == 'undefined')
+    ProjectComponent.prototype.setFeatureBackground = function (thumbnails) {
+        if (typeof thumbnails === 'undefined')
             return false;
-        return 'url(' + (path) + ')';
+        if (typeof thumbnails === 'object') {
+            return 'url(' + (thumbnails[0]) + ')';
+            ;
+        }
+        return 'url(' + (thumbnails) + ')';
     };
     return ProjectComponent;
 }());
@@ -477,7 +563,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "section{\r\n    margin: 15px;\r\n}\r\nsection > div{}\r\n", ""]);
 
 // exports
 
@@ -490,7 +576,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/projects/projects.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"projects\">\n    <div *ngFor=\"let project of projects\">\n        <app-project [project]=\"project\"></app-project>\n    </div>\n</div>\n"
+module.exports = "<section *ngIf=\"projects\">\n    <div *ngFor=\"let project of projects\">\n        <app-project [project]=\"project\"></app-project>\n    </div>\n</section>\n"
 
 /***/ }),
 

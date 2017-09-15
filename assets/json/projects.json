@@ -1,52 +1,88 @@
-[{
-    "name": "Slyce Gateway",
-    "tag": "Web Application",
-    "thumbnail": "/assets/images/slycegateway/home.png",
-    "description": "SLYCE Gateway is a dashboard interface that provides merchants with payment gateway access. This web application will enable users to run sales and refunds, view reports, and use several other ancillary tools."
-  },
-  {
-    "name": "Email Invoice",
-    "tag": "Web Application",
-    "thumbnail": "/assets/images/email-invoice/home.png",
-    "description": "Create and send electronic invoices with pdf attachment & send secured link to customers. Customize with just a few clicks and get paid faster using payment page."
-  },
-  {
-    "name": "Slyce Global",
-    "tag": "Web Application",
-    "thumbnail": "/assets/images/slyce-global/VirtualTerminal.png",
-    "description": "A web application for managing merchant and customer transactions. Derived from Slyce Gateway."
-  },
-  {
-    "name": "Kusina Uno",
-    "tag": "Graphics",
-    "thumbnail": "/assets/images/kusina-uno/menu-front.jpg"
-  },
-  {
-    "name": "Kids Karate Perth",
-    "tag": "Ecommerce",
-    "thumbnail": "/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_.jpeg"
-  },
-  {
-    "name": "Salt Property",
-    "url": "http://saltproperty.com.au/",
-    "tag": "Website",
-    "thumbnail": "/assets/images/salt-property/http_saltproperty.com.au_.jpeg"
-  },
-  {
-    "name": "Ink Out",
-    "url": "http://www.inkout.com.au/",
-    "tag": "Website",
-    "thumbnail": "/assets/images/inkout/http_www.inkout.com.au_.jpeg"
-  },
-  {
-    "name": "Photography",
-    "url": "/projects/photography",
-    "tag": "Photography",
-    "thumbnail": "/assets/images/photography/ginatilan-aerial-view.jpg"
-  },
-  {
-    "name": "Biogas Technology",
-    "url": "/projects/biogas",
-    "thumbnail": "/assets/images/biogas/P_20160330_142544.jpg"
-  }
+[
+    {
+        "name": "Slyce Gateway",
+        "url": "slyce-gateway",
+        "tag": "Web Application",
+        "description": "SLYCE Gateway is a dashboard interface that provides merchants with payment gateway access. This web application will enable users to run sales and refunds, view reports, and use several other ancillary tools.",
+        "thumbnails": [
+            "/assets/images/slycegateway/home.png",
+            "/assets/images/slycegateway/Customers.png",
+            "/assets/images/slycegateway/Settings.png",
+            "/assets/images/slycegateway/Subscription.png",
+            "/assets/images/slycegateway/Support.png",
+            "/assets/images/slycegateway/Tasks.png",
+            "/assets/images/slycegateway/Invoice.png",
+            "/assets/images/slycegateway/Overview.png",
+            "/assets/images/slycegateway/Payplans.png",
+            "/assets/images/slycegateway/Products.png",
+            "/assets/images/slycegateway/Users.png",
+            "/assets/images/slycegateway/Invoice%20-%20step%202.png",
+            "/assets/images/slycegateway/Invoice%20-%20step%203.png",
+            "/assets/images/slycegateway/Quick%20Sale%20Payment.png",
+            "/assets/images/slycegateway/Quick%20Sale.png",
+            "/assets/images/slycegateway/Refund%20-%20Void.png",
+            "/assets/images/slycegateway/Reports%20-%20ACH%20Summary.png",
+            "/assets/images/slycegateway/Reports%20-%20DeclineError.png",
+            "/assets/images/slycegateway/Reports%20-%20Transactions.png",
+            "/assets/images/slycegateway/Text%20Payments.png",
+            "/assets/images/slycegateway/User%20-%20edit.png"
+        ]
+    },
+    {
+        "name": "Email Invoice",
+        "url": "email-invoice",
+        "tag": "Web Application",
+        "description": "Create and send electronic invoices with pdf attachment & send secured link to customers. Customize with just a few clicks and get paid faster using payment page.",
+        "thumbnails": ["/assets/images/email-invoice/home.png","/assets/images/email-invoice/invoice.png"]
+    },
+    {
+        "name": "Slyce Global",
+        "url": "slyce-global",
+        "tag": "Web Application",
+        "description": "A web application for managing merchant and customer transactions. Derived from Slyce Gateway. This is an Angular project using. But this project was put onhold without clear reasons from our client.",
+        "thumbnails": [
+            "/assets/images/slyce-global/VirtualTerminal.png",
+            "/assets/images/slyce-global/Customers.png",
+            "/assets/images/slyce-global/home.png",
+            "/assets/images/slyce-global/Invoice%20-%20Archive.png",
+            "/assets/images/slyce-global/Invoice.png",
+            "/assets/images/slyce-global/Transactions.png"
+        ]
+    },
+    {
+        "name": "Kusina Uno",
+        "url": "kusina-uno",
+        "tag": "Graphics",
+        "description": "Before this restaurant was opened, I was responsible for its logo design and all other restaurant graphics material. This was one of my successful job i've done during my after graduate in college.",
+        "thumbnails": ["/assets/images/kusina-uno/menu-front.jpg","/assets/images/kusina-uno/menu-back.jpg"]
+    },
+    {
+        "name": "Kids Karate Perth",
+        "url": "kids-karate-perth",
+        "tag": "Ecommerce",
+        "thumbnails": ["/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_.jpeg"]
+    },
+    {
+        "name": "Salt Property",
+        "url": "salt-property",
+        "tag": "Website",
+        "thumbnails": "/assets/images/salt-property/http_saltproperty.com.au_.jpeg"
+    },
+    {
+        "name": "Ink Out",
+        "url": "ink-out",
+        "tag": "Website",
+        "thumbnails": "/assets/images/inkout/http_www.inkout.com.au_.jpeg"
+    },
+    {
+        "name": "Photography",
+        "url": "photography",
+        "tag": "Photography",
+        "thumbnails": "/assets/images/photography/ginatilan-aerial-view.jpg"
+    },
+    {
+        "name": "Biogas Technology",
+        "url": "biogas",
+        "thumbnails": "/assets/images/biogas/P_20160330_142544.jpg"
+    }
 ]
