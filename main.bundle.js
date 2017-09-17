@@ -13,28 +13,47 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 
 /***/ }),
 
-/***/ "../../../../../src/app/about/about.component.css":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "../../../../../src/app/ProjectResolver.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectResolver; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__portfolio_service__ = __webpack_require__("../../../../../src/app/portfolio.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 
-// module
-exports.push([module.i, "", ""]);
+var ProjectResolver = (function () {
+    function ProjectResolver(projectService) {
+        this.projectService = projectService;
+    }
+    ProjectResolver.prototype.resolve = function (route) {
+        return this.projectService.getProject(route.params['name']);
+    };
+    return ProjectResolver;
+}());
+ProjectResolver = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__portfolio_service__["a" /* PortfolioService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__portfolio_service__["a" /* PortfolioService */]) === "function" && _a || Object])
+], ProjectResolver);
 
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+var _a;
+//# sourceMappingURL=ProjectResolver.js.map
 
 /***/ }),
 
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"flex-wrapper flex-column\">\n    <div class=\"col-xs-12 col-md-9 col-lg-9\">\n        <h2>About Me</h2>\n        <p>When I was a kid, I grow up with my curiosity that makes me what I am right now. I started </p>\n    </div>\n</section>\n"
+module.exports = "<section id=\"about\" class=\"flex-wrapper flex-column\">\n    <div class=\"col-xs-12 col-md-9 col-lg-8\">\n        <h2>About Me</h2>\n        <p>Welcome to my page. Its a place where I can encourange, inspire, and motivate others specially to those young one's. Its my pleasure to help others find there encouragement and fulfillment in there works. I also share ideas and techniques from my personal experience of getting you solve your problems. I have the right tools that can be useful in making projects.</p>\n        \n        <p>My name is James Jomuad, I'm a Full Stack web developer. I graduated with a Bachelor's Degree in college.</p>\n\n        <p>I'm open to Job opportunities, feel free to click the Contact button now before you forget.</p>\n    </div>\n</section>\n"
 
 /***/ }),
 
@@ -65,7 +84,6 @@ AboutComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-about',
         template: __webpack_require__("../../../../../src/app/about/about.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/about/about.component.css")]
     }),
     __metadata("design:paramtypes", [])
 ], AboutComponent);
@@ -154,17 +172,19 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/page-not-found/page-not-found.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__sidebar_left_sidebar_left_component__ = __webpack_require__("../../../../../src/app/sidebar-left/sidebar-left.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__portfolio_service__ = __webpack_require__("../../../../../src/app/portfolio.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__ = __webpack_require__("../../../../../src/app/projects/projects.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__project_project_component__ = __webpack_require__("../../../../../src/app/project/project.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__project_single_project_single_component__ = __webpack_require__("../../../../../src/app/project-single/project-single.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__projects_projects_component__ = __webpack_require__("../../../../../src/app/projects/projects.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__project_project_component__ = __webpack_require__("../../../../../src/app/project/project.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__project_single_project_single_component__ = __webpack_require__("../../../../../src/app/project-single/project-single.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__portfolio_service__ = __webpack_require__("../../../../../src/app/portfolio.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ProjectResolver__ = __webpack_require__("../../../../../src/app/ProjectResolver.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -186,16 +206,16 @@ var appRoutes = [
     },
     {
         path: 'projects',
-        component: __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__["a" /* ProjectsComponent */],
+        component: __WEBPACK_IMPORTED_MODULE_8__projects_projects_component__["a" /* ProjectsComponent */],
         data: { title: 'Projects' }
     },
     {
         path: 'project/:name',
-        component: __WEBPACK_IMPORTED_MODULE_12__project_single_project_single_component__["a" /* ProjectSingleComponent */],
+        component: __WEBPACK_IMPORTED_MODULE_11__project_single_project_single_component__["a" /* ProjectSingleComponent */]
     },
     {
         path: 'about',
-        component: __WEBPACK_IMPORTED_MODULE_11__about_about_component__["a" /* AboutComponent */],
+        component: __WEBPACK_IMPORTED_MODULE_10__about_about_component__["a" /* AboutComponent */],
         data: { title: 'About' }
     },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_5__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
@@ -212,17 +232,17 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
             __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */],
             __WEBPACK_IMPORTED_MODULE_7__sidebar_left_sidebar_left_component__["a" /* SidebarLeftComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__["a" /* ProjectsComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__project_project_component__["a" /* ProjectComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__about_about_component__["a" /* AboutComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__project_single_project_single_component__["a" /* ProjectSingleComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__projects_projects_component__["a" /* ProjectsComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__project_project_component__["a" /* ProjectComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__project_single_project_single_component__["a" /* ProjectSingleComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */].forRoot(appRoutes),
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_8__portfolio_service__["a" /* PortfolioService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_12__portfolio_service__["a" /* PortfolioService */], __WEBPACK_IMPORTED_MODULE_13__ProjectResolver__["a" /* ProjectResolver */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -239,7 +259,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "[app-home]{}\r\n\r\n.banner{\r\n    padding: 100px;\r\n    border-top: 1px solid #fff;\r\n    border-bottom: 1px solid #fff;\r\n    /*background: #00C9FF;\r\n    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);\r\n    background: linear-gradient(to right, #92FE9D, #00C9FF);*/\r\n}\r\n\r\n.banner h5{\r\n    font-weight: bold;\r\n    margin: 15px 0;\r\n}\r\n\r\n.banner h2 .text-primary{\r\n    font-size: 50px;\r\n    height: 100vh;\r\n    text-shadow: 0 1px #fff;\r\n    font-weight: bold;\r\n}\r\n", ""]);
+exports.push([module.i, "[app-home]{}\r\n\r\n.banner{\r\n    padding: 100px;\r\n    border-top: 1px solid #fff;\r\n    border-bottom: 1px solid #fff;\r\n    /*background: #00C9FF;\r\n    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);\r\n    background: linear-gradient(to right, #92FE9D, #00C9FF);*/\r\n}\r\n\r\n.banner blockquote{\r\n    position: relative;\r\n    border: none;\r\n}\r\n.banner blockquote::before{\r\n    content: open-quote;\r\n    color: #469eea;\r\n    font-size: 50px;\r\n    height: 20px;\r\n    position: absolute;\r\n    margin: -25px 0 0 -20px;\r\n}\r\n.banner blockquote::after{\r\n    content: close-quote;\r\n    color: #469eea;\r\n    font-size: 50px;\r\n    height: 20px;\r\n    position: absolute;\r\n    margin: -20px 0 0 -20px;\r\n    right: 0;\r\n}\r\n\r\n.banner h5{\r\n    font-weight: bold;\r\n    margin: 15px 0;\r\n}\r\n\r\n.banner h2 .text-primary{\r\n    font-size: 50px;\r\n    height: 100vh;\r\n    text-shadow: 0 1px #fff;\r\n    font-weight: bold;\r\n}\r\n", ""]);
 
 // exports
 
@@ -252,7 +272,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"flex-wrapper banner\">\n    <div>\n        <h2>I am <span class=\"text-primary\">James Jomuad</span></h2>\n        <h5>Full Stack Web Developer</h5>\n        <p>I have worked in different types of industries, but I focused on web application/software development. Its been 5 years in my career as a web developer. I am passionate about creating website and worked on its design. I take my inspiration and passion from my environments & colleague. Music boost my productivity and helped me fucos on my work with matching coffee.</p>\n\n        <p>I am up into new projects. Specially when they are new and that can be a potential to grow an organization.</p>\n    </div>\n</header>\n\n<section class=\"featured\">\n    <div class=\"container\">\n        <h2><b>Featured</b></h2>\n\n        <div *ngIf=\"features\">\r\n            <ul>\r\n                <li *ngFor=\"let project of features\">\r\n                    <app-project [project]=\"project\"></app-project>\r\n                </li>\r\n            </ul>\r\n        </div>\n    </div>\n</section>\n"
+module.exports = "<header class=\"flex-wrapper banner\">\n    <div>\n        <h2>I am <span class=\"text-primary\">James Jomuad</span></h2>\n        <h5>Full Stack Web Developer</h5>\n\n        <blockquote>\n            <p>I have worked in different types of industries, but I focused on web application/software development. Its been 5 years in my career as a web developer. I am passionate about creating website and worked on its design. I take my inspiration and passion from my environments & colleague. Music boost my productivity and helped me fucos on my work with matching coffee.</p>\n            <p>I'm open to Job opportunities, feel free to contact me.</p>\n        </blockquote>\n    </div>\n</header>\n\n<section class=\"featured\">\n    <div class=\"container\">\n        <h2><b>Featured</b></h2>\n\n        <div *ngIf=\"features\">\n            <ul>\n                <li *ngFor=\"let project of features\">\n                    <app-project [project]=\"project\"></app-project>\n                </li>\n            </ul>\n        </div>\n    </div>\n</section>\n"
 
 /***/ }),
 
@@ -372,6 +392,8 @@ PageNotFoundComponent = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -383,12 +405,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var PortfolioService = (function () {
     function PortfolioService(http) {
         this.http = http;
     }
     PortfolioService.prototype.getPortfolio = function () {
         return this.http.get('assets/json/projects.json');
+    };
+    PortfolioService.prototype.getProject = function (name) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].create(function (observer) {
+            return _this.http.get('assets/json/projects.json');
+        });
     };
     return PortfolioService;
 }());
@@ -423,7 +452,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/project-single/project-single.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section *ngIf=\"project\" class=\"container\">\n    <h2>{{project.name}}</h2>\n    <br\n    >\n    <div *ngIf=\"project.description\">\n        <h4>Description</h4>\n        <p>{{project.description}}</p>\n    </div>\n    <br>\n\n    <div class=\"row\">\n        <div class=\"col-xs-6 col-md-3\" *ngFor=\"let thumbnail of project.thumbnails\">\n            <a href=\"{{thumbnail}}\" target=\"_blank\" class=\"thumbnail\">\n                <div class=\"cover\" style=\"height: 200px;\" [style.background]=\"'url('+thumbnail+')'\"></div>\n            </a>\n        </div>\n    </div>\n\n    <div>\n        <h4>Tags:</h4>\n        <span class=\"badge\">{{project.tag}}</span>\n    </div>\n\n</section>\n"
+module.exports = "<section *ngIf=\"project\" class=\"container\">\n    <h2>{{project.name}}</h2>\n    <br>\n    <div *ngIf=\"project.description\">\n        <h4>Description</h4>\n        <p>{{project.description}}</p>\n    </div>\n    <br>\n\n    <div class=\"row\">\n        <!-- if array -->\n        <ng-container *ngIf='isObject(project.thumbnails)'>\n            <div class=\"col-xs-6 col-md-3\" *ngFor=\"let thumbnail of project.thumbnails\">\n                <a href=\"{{thumbnail}}\" target=\"_blank\" class=\"thumbnail\">\n                    <div class=\"cover\" style=\"height: 200px;\" [style.background]=\"'url('+thumbnail+')'\"></div>\n                </a>\n            </div>\n        </ng-container>\n        <!-- If string -->\n        <ng-container *ngIf='!isObject(project.thumbnails)'>\n            <div class=\"col-xs-6 col-md-3\">\n                <a href=\"{{project.thumbnails}}\" target=\"_blank\" class=\"thumbnail\">\n                    <div class=\"cover\" style=\"height: 200px;\" [style.background]=\"'url('+project.thumbnails+')'\"></div>\n                </a>\n            </div>\n        </ng-container>\n    </div>\n\n    <div>\n        <h4>Tags:</h4>\n        <span class=\"badge\">{{project.tag}}</span>\n    </div>\n\n</section>"
 
 /***/ }),
 
@@ -452,14 +481,20 @@ var ProjectSingleComponent = (function () {
         var _this = this;
         route.params.subscribe(function (params) {
             Project.getPortfolio()
-                .subscribe(function (response) { return _this.project = _this.getProject(params.name, response.json()); }, function (error) { return console.log(error); });
+                .subscribe(function (response) {
+                _this.project = _this.getProject(params.name, response.json());
+                console.log(typeof _this.project.thumbnails === 'object');
+            }, function (error) { return console.log(error); });
         });
     }
     ProjectSingleComponent.prototype.ngOnInit = function () { };
     ProjectSingleComponent.prototype.getProject = function (name, data) {
         return data.filter(function (obj) {
-            return obj.url === name;
+            return obj.route === name;
         })[0];
+    };
+    ProjectSingleComponent.prototype.isObject = function (val) {
+        return typeof val === 'object';
     };
     return ProjectSingleComponent;
 }());
@@ -498,7 +533,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/project/project.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrap\" [style.background]=\"setFeatureBackground(project.thumbnails)\">\n    <div class=\"inner\">\n        <a href=\"#\" class=\"type\"><small>{{project.tag}}</small></a>\n        <a routerLink=\"{{getUrl(project.url)}}\" class=\"title\">{{project.name}}</a>\n    </div>\n</div>\n"
+module.exports = "<!-- Template @home -->\n<ng-container *ngIf=\"currentRoute==='/'\">\n    <div class=\"wrap\" [style.background]=\"setFeatureBackground(project.thumbnails)\">\n        <div class=\"inner\">\n            <a href=\"#\" class=\"type\"><small>{{project.tag}}</small></a>\n            <a routerLink=\"{{'/project/'+project.route}}\" class=\"title\">{{project.name}}</a>\n        </div>\n    </div>\n</ng-container>"
 
 /***/ }),
 
@@ -508,6 +543,7 @@ module.exports = "<div class=\"wrap\" [style.background]=\"setFeatureBackground(
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -518,8 +554,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var ProjectComponent = (function () {
-    function ProjectComponent() {
+    function ProjectComponent(route) {
+        this.currentRoute = route.url;
     }
     ProjectComponent.prototype.ngOnInit = function () { };
     ProjectComponent.prototype.getUrl = function (url) {
@@ -548,9 +586,10 @@ ProjectComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/project/project.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project/project.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
 ], ProjectComponent);
 
+var _a;
 //# sourceMappingURL=project.component.js.map
 
 /***/ }),
@@ -563,7 +602,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "section{\r\n    margin: 15px;\r\n}\r\nsection > div{}\r\n", ""]);
+exports.push([module.i, ".project{\r\n    background-size: cover!important;\r\n    border: 1px solid #fff;\r\n    width: 25%;\r\n    float: left;\r\n    height: 33.3vh;\r\n    min-height: 200px;\r\n    min-width: 299.84px;\r\n    position: relative;\r\n}\r\n.project .cover{\r\n    background: rgba(0, 0, 0, 0.7);\r\n    height: 100%;\r\n    position: absolute;\r\n    width: 100%;\r\n}\r\n.project:last-child{}\r\n.project .title{\r\n    text-decoration: none;\r\n    color: #fff;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n}", ""]);
 
 // exports
 
@@ -576,7 +615,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/projects/projects.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section *ngIf=\"projects\">\n    <div *ngFor=\"let project of projects\">\n        <app-project [project]=\"project\"></app-project>\n    </div>\n</section>\n"
+module.exports = "<section *ngIf=\"projects\">\n    <div class=\"project\" *ngFor=\"let project of projects\"  [style.background]=\"setFeatureBackground(project.thumbnails)\">\n        <div class=\"cover\">\n            <a class=\"title\" routerLink=\"{{'/project/'+project.route}}\">{{project.name}}</a>\n        </div>\n    </div>\n</section>\n"
 
 /***/ }),
 
@@ -611,6 +650,15 @@ var ProjectsComponent = (function () {
     ProjectsComponent.prototype.onProject = function (res) {
         this.projects = res.json();
     };
+    ProjectsComponent.prototype.setFeatureBackground = function (thumbnails) {
+        if (typeof thumbnails === 'undefined')
+            return false;
+        if (typeof thumbnails === 'object') {
+            return 'url(' + (thumbnails[0]) + ')';
+            ;
+        }
+        return 'url(' + (thumbnails) + ')';
+    };
     return ProjectsComponent;
 }());
 ProjectsComponent = __decorate([
@@ -635,7 +683,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".profile{}\r\n.profile img{\r\n    border-radius: 100%;\r\n    margin: 50px 15px;\r\n    width: 130px;\r\n}", ""]);
+exports.push([module.i, ".profile{}\r\n.profile img{\r\n    border-radius: 100%;\r\n    margin: 50px 15px;\r\n    width: 130px;\r\n    border: 5px solid #fff;\r\n    box-shadow: 0px 2px 5px #aaa;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -648,7 +696,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/sidebar-left/sidebar-left.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"profile\">\n    <div class=\"text-center\">\n        <img src=\"/assets/images/me.jpg\" alt=\"Profile image\"/>\n    </div>\n</div>\n\n{{menus}}\n\n\n<ul class=\"sidebar-nav\">\n    <li><a routerLink=\"/\">Home</a></li>\n    <li><a routerLink=\"/projects\">Works</a></li>\n    <li><a routerLink=\"/awards\">Awards</a></li>\n    <li><a routerLink=\"/skills\">Skills</a></li>\n    <li><a routerLink=\"/about\">About me</a></li>\n    <li><a href=\"mailTo:st.james.jomuad@gmail.com\">Contact Me</a></li>\n</ul>\n"
+module.exports = "<div class=\"profile\">\n    <div class=\"text-center\">\n        <img src=\"/assets/images/profile.png\" alt=\"Profile image\"/>\n    </div>\n</div>\n\n<ul class=\"sidebar-nav\">\n    <li><a routerLink=\"/\">Home</a></li>\n    <li routerLinkActive=\"active\"><a routerLink=\"/projects\">Works</a></li>\n    <!-- <li [routerLinkActive]=\"['active']\"><a routerLink=\"/awards\">Awards</a></li> -->\n    <!-- <li [routerLinkActive]=\"['active']\"><a routerLink=\"/skills\">Skills</a></li> -->\n    <li routerLinkActive=\"active\"><a routerLink=\"/about\">About Me</a></li>\n    <li><a class=\"contact\" href=\"mailTo:st.james.jomuad@gmail.com\">Contact Me</a></li>\n</ul>\n\n\n"
 
 /***/ }),
 

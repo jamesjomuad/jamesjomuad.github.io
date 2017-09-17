@@ -1,7 +1,7 @@
 [
     {
         "name": "Slyce Gateway",
-        "url": "slyce-gateway",
+        "route": "slyce-gateway",
         "tag": "Web Application",
         "description": "SLYCE Gateway is a dashboard interface that provides merchants with payment gateway access. This web application will enable users to run sales and refunds, view reports, and use several other ancillary tools.",
         "thumbnails": [
@@ -30,14 +30,17 @@
     },
     {
         "name": "Email Invoice",
-        "url": "email-invoice",
+        "route": "email-invoice",
         "tag": "Web Application",
         "description": "Create and send electronic invoices with pdf attachment & send secured link to customers. Customize with just a few clicks and get paid faster using payment page.",
-        "thumbnails": ["/assets/images/email-invoice/home.png","/assets/images/email-invoice/invoice.png"]
+        "thumbnails": [
+            "/assets/images/email-invoice/home.png",
+            "/assets/images/email-invoice/invoice.png"
+        ]
     },
     {
         "name": "Slyce Global",
-        "url": "slyce-global",
+        "route": "slyce-global",
         "tag": "Web Application",
         "description": "A web application for managing merchant and customer transactions. Derived from Slyce Gateway. This is an Angular project using. But this project was put onhold without clear reasons from our client.",
         "thumbnails": [
@@ -51,38 +54,132 @@
     },
     {
         "name": "Kusina Uno",
-        "url": "kusina-uno",
+        "route": "kusina-uno",
         "tag": "Graphics",
         "description": "Before this restaurant was opened, I was responsible for its logo design and all other restaurant graphics material. This was one of my successful job i've done during my after graduate in college.",
-        "thumbnails": ["/assets/images/kusina-uno/menu-front.jpg","/assets/images/kusina-uno/menu-back.jpg"]
+        "thumbnails": [
+            "/assets/images/kusina-uno/menu-front.jpg",
+            "/assets/images/kusina-uno/menu-back.jpg"
+        ]
     },
     {
         "name": "Kids Karate Perth",
-        "url": "kids-karate-perth",
+        "route": "kids-karate-perth",
         "tag": "Ecommerce",
-        "thumbnails": ["/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_.jpeg"]
+        "thumbnails": [
+            "/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_.jpeg",
+            "/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_about-kids-karate-perth_.jpeg",
+            "/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_contact_.jpeg",
+            "/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_locations_.jpeg",
+            "/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_news_.jpeg",
+            "/assets/images/kids-karate-perth/http_www.kids-karate-perth.com.au_products_location_ballajura_.jpeg"
+        ]
     },
     {
         "name": "Salt Property",
-        "url": "salt-property",
+        "route": "salt-property",
         "tag": "Website",
-        "thumbnails": "/assets/images/salt-property/http_saltproperty.com.au_.jpeg"
+        "thumbnails": [
+            "/assets/images/salt-property/http_saltproperty.com.au_.jpeg",
+            "/assets/images/salt-property/http_saltproperty.com.au_about_.jpeg",
+            "/assets/images/salt-property/http_saltproperty.com.au_blog_.jpeg",
+            "/assets/images/salt-property/http_saltproperty.com.au_contact_.jpeg"
+        ]
     },
     {
         "name": "Ink Out",
-        "url": "ink-out",
+        "route": "ink-out",
         "tag": "Website",
         "thumbnails": "/assets/images/inkout/http_www.inkout.com.au_.jpeg"
     },
     {
         "name": "Photography",
-        "url": "photography",
+        "route": "photography",
         "tag": "Photography",
         "thumbnails": "/assets/images/photography/ginatilan-aerial-view.jpg"
     },
     {
         "name": "Biogas Technology",
-        "url": "biogas",
-        "thumbnails": "/assets/images/biogas/P_20160330_142544.jpg"
+        "route": "biogas",
+        "thumbnails": [
+            "/assets/images/biogas/P_20160330_142544.jpg",
+            "/assets/images/biogas/DSC00068.jpg",
+            "/assets/images/biogas/DSC00078.jpg",
+            "/assets/images/biogas/P_20160330_142501_1_p.jpg",
+            "/assets/images/biogas/P_20160330_142704.jpg",
+            "/assets/images/biogas/P_20160330_143802.jpg",
+            "/assets/images/biogas/P_20160331_091902_1_p.jpg",
+            "/assets/images/biogas/side-a.jpg",
+            "/assets/images/biogas/side-b.jpg",
+            "/assets/images/biogas/side-c.jpg",
+            "/assets/images/biogas/side-d.jpg"
+        ]
+    },
+    {
+        "name": "UWA Junior Rugby",
+        "route": "uwa-junior-rugby",
+        "tag": "Website",
+        "thumbnails": [
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_junior-news.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniors.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniorscontact-juniors.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniorsfixtures-results-ladder.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniorsfixtures-results-ladderfixtures-u6-u10s.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniorsfixtures-results-ladderu11s-u16s.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniorsjuniors-history.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniorsjuniors-historyannual-reports.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniorsjuniors-newsletter.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au_juniorsrules-and-regulations.jpeg",
+            "/assets/images/uwajuniorrugby.com.au/http_www.uwajuniorrugby.com.au.jpeg"
+        ]
+    },
+    {
+        "name": "Eastperth Safety",
+        "route": "eastperthsafety",
+        "tag": "Website",
+        "thumbnails": [
+            "/assets/images/eastperthsafety.net/http_www.eastperthsafety.net_.jpeg",
+            "/assets/images/eastperthsafety.net/http_www.eastperthsafety.net_about-us_.jpeg",
+            "/assets/images/eastperthsafety.net/http_www.eastperthsafety.net_contact-us_.jpeg",
+            "/assets/images/eastperthsafety.net/http_www.eastperthsafety.net_issues_.jpeg",
+            "/assets/images/eastperthsafety.net/http_www.eastperthsafety.net_links_.jpeg",
+            "/assets/images/eastperthsafety.net/http_www.eastperthsafety.net_news_.jpeg",
+            "/assets/images/eastperthsafety.net/http_www.eastperthsafety.net_publications_.jpeg"
+        ]
+    },
+    {
+        "name": "Thompsons West Perth",
+        "route": "thompsonswestperth",
+        "tag": "Website",
+        "thumbnails": [
+            "/assets/images/thompsonswestperth.com.au/http_thompsonswestperth.com.au_.jpeg",
+            "/assets/images/thompsonswestperth.com.au/http_thompsonswestperth.com.au_about-thompsons-of-west-perth_.jpeg",
+            "/assets/images/thompsonswestperth.com.au/http_thompsonswestperth.com.au_adverts-and-offers_.jpeg",
+            "/assets/images/thompsonswestperth.com.au/http_thompsonswestperth.com.au_blog_.jpeg",
+            "/assets/images/thompsonswestperth.com.au/http_thompsonswestperth.com.au_collections_.jpeg",
+            "/assets/images/thompsonswestperth.com.au/http_thompsonswestperth.com.au_facebook_.jpeg",
+            "/assets/images/thompsonswestperth.com.au/http_thompsonswestperth.com.au_twitter_.jpeg",
+            "/assets/images/thompsonswestperth.com.au/http_thompsonswestperth.com.au_where-to-find-us_.jpeg"
+        ]
+    },
+    {
+        "name": "Limones",
+        "route": "limones",
+        "tag": "Website",
+        "thumbnails": "/assets/images/limones.com.au/Limones%20Restaurant%20%20%20East%20Fremantle%20Restaurant%20%20WA.png"
+    },
+    {
+        "name": "Asian Mining and Energy Investment (AMEI)",
+        "route": "amei",
+        "tag": "Website",
+        "thumbnails": [
+            "/assets/images/ameiconference.com/timthumb-115.jpg",
+            "/assets/images/ameiconference.com/timthumb-212.jpg",
+            "/assets/images/ameiconference.com/timthumb-310.jpg",
+            "/assets/images/ameiconference.com/timthumb-410.jpg",
+            "/assets/images/ameiconference.com/timthumb-58.jpg",
+            "/assets/images/ameiconference.com/timthumb-66.jpg",
+            "/assets/images/ameiconference.com/timthumb-76.jpg"
+        ]
     }
 ]
