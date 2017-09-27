@@ -11,7 +11,7 @@
             "AWS",
             "GIT"
         ],
-        "description": "SLYCE Gateway is a dashboard interface that provides merchants with payment gateway access. This web application will enable users to run sales and refunds, view reports, and use several other ancillary tools.",
+        "description": "<p>SLYCE Gateway is a dashboard interface that provides merchants with payment gateway access. This web application will enable users to run sales and refunds, view reports, and use several other ancillary tools.</p> <strong>Role & Responsibilities</strong> <ul> <li>Domain name setup</li> <li>Server Monitoring</li> <li>Server Setup</li> <li>Backend PHP/Laravel</li> <li>SQL Queries</li> <li>DB/Schema Structure</li> <li>Front-end Bootstrap, Javascript/JQuery</li> <li>Aws SES Setup</li> <li>Aws S3 Setup</li> <li>Git</li> </ul>",
         "thumbnails": [
             "/assets/images/slycegateway/home.png",
             "/assets/images/slycegateway/Customers.png",
