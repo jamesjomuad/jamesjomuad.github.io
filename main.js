@@ -18,7 +18,7 @@ module.exports = "<br id=\"about\">\n<div class=\"container\">\n  <!-- Section A
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mdb-navbar SideClass=\"navbar fixed-top navbar-expand-lg navbar-dark ie-nav rgba-red-strong\" [containerInside]=\"false\">\r\n  <links class=\"d-flex justify-content-center\">\r\n    <ul class=\"navbar-nav nav nav-pills\">\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#home\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#about\">About</a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#skills\">Skills</a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#works\" >Works</a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n        <a class=\"nav-link\" href=\"/#/#certificates\">Certificates</a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect ng-class=\"{'active': active === true}\" ng-click=\"active = !active\">\r\n        <a class=\"nav-link\" href=\"/#/#contact\">Contact</a>\r\n      </li>\r\n    </ul>\r\n  </links>\r\n  <div class=\"clearfix p-3\">&nbsp;</div>\r\n</mdb-navbar>\r\n\r\n<router-outlet></router-outlet>"
+module.exports = "<mdb-navbar SideClass=\"navbar fixed-top navbar-expand-lg navbar-dark ie-nav rgba-red-strong\" [containerInside]=\"false\">\r\n  <links class=\"d-flex justify-content-center\">\r\n    <ul class=\"navbar-nav nav nav-pills\">\r\n      <li class=\"nav-item waves-light mx-2\" [ngClass]=\"{'active': navActive=='/' || navActive=='/#home'}\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#home\" >Home</a>\r\n      </li>\r\n      <li class=\"nav-item waves-light mx-2\" [ngClass]=\"{'active': navActive=='/#about'}\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#about\">About</a>\r\n      </li>\r\n      <li class=\"nav-item waves-light mx-2\" [ngClass]=\"{'active': navActive=='/#skills'}\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#skills\">Skills</a>\r\n      </li>\r\n      <li class=\"nav-item waves-light mx-2\" [ngClass]=\"{'active': navActive=='/#works'}\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#works\">Works</a>\r\n      </li>\r\n      <li class=\"nav-item waves-light mx-2\" [ngClass]=\"{'active': navActive=='/#certificates'}\" mdbWavesEffect>\r\n        <a class=\"nav-link\" href=\"/#/#certificates\">Certificates</a>\r\n      </li>\r\n      <li class=\"nav-item waves-light mx-2\" [ngClass]=\"{'active': navActive=='/#contact'}\" mdbWavesEffect>\r\n        <a class=\"nav-link\" href=\"/#/#contact\">Contact</a>\r\n      </li>\r\n    </ul>\r\n  </links>\r\n  <div class=\"clearfix p-3\">&nbsp;</div>\r\n</mdb-navbar>\r\n\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -29,7 +29,7 @@ module.exports = "<mdb-navbar SideClass=\"navbar fixed-top navbar-expand-lg navb
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"certificates\"></div>\n<div class=\"view intro jarallax\" style=\"background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg); background-attachment: fixed; min-height: 700px\">\n  <div class=\"full-bg-img mask rgba-purple-slight\">\n\n    <div class=\"container-fluid\">\n      <div class=\"row pt-5 mt-4\">\n        <div class=\"col-md-12\">\n            <h2 class=\"text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn\" data-wow-delay=\"0.2s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">Certificates/<strong>Awards</strong></h2>\n            <!-- <p class=\"text-center w-responsive mx-auto wow fadeIn my-5\" style=\"visibility: visible; animation-name: fadeIn;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste provident, voluptatum voluptatibus aut modi aspernatur autem impedit, eius, debitis earum voluptatem. Quaerat hic aspernatur laborum magni earum. At, officiis!</p> -->\n        </div>\n      </div>\n      <div class=\"owl-carousel\" #carousel>\n        <div *ngFor=\"let award of awards\">\n          <a href=\"{{award.thumbnail}}\" class=\"fancybox\" data-fancybox=\"gallery\">\n            <img src=\"{{ award.thumbnail }}\" class=\"img-responsive img-fluid z-depth-1 m-4\">\n          </a>\n        </div>\n      </div>\n    </div>\n    <div class=\"clearfix mb-5\"></div>\n  </div>\n</div>"
+module.exports = "<div id=\"certificates\"></div>\n<div class=\"view intro jarallax\" style=\"background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg); background-attachment: fixed; min-height: 500px\">\n  <div class=\"full-bg-img mask rgba-purple-slight\">\n\n    <div class=\"container-fluid\">\n      <div class=\"row pt-5 mt-4\">\n        <div class=\"col-md-12\">\n            <h2 class=\"text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn\" data-wow-delay=\"0.2s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">Certificates/<strong>Awards</strong></h2>\n            <!-- <p class=\"text-center w-responsive mx-auto wow fadeIn my-5\" style=\"visibility: visible; animation-name: fadeIn;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste provident, voluptatum voluptatibus aut modi aspernatur autem impedit, eius, debitis earum voluptatem. Quaerat hic aspernatur laborum magni earum. At, officiis!</p> -->\n        </div>\n      </div>\n      <div class=\"owl-carousel\" #carousel>\n        <div *ngFor=\"let award of awards\">\n          <a href=\"{{award.thumbnail}}\" class=\"fancybox\" data-fancybox=\"gallery\">\n            <img src=\"{{ award.thumbnail }}\" class=\"img-responsive img-fluid z-depth-1 m-4\">\n          </a>\n        </div>\n      </div>\n    </div>\n    <div class=\"clearfix mb-5\"></div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -192,7 +192,7 @@ var AboutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "@media (max-width: 990px) {\n  .navbar-nav.nav {\n    width: 100%; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFVzZXJzXFxKYW1lc1xcRGVza3RvcFxcamFtZXNqb211YWQuZ2l0aHViLmRldi9zcmNcXGFwcFxcYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0k7SUFDRSxXQUFXLEVBQUEsRUFDWiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSAobWF4LXdpZHRoOiA5OTBweCkge1xyXG4gICAgLm5hdmJhci1uYXYubmF2IHtcclxuICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICB9XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -207,9 +207,10 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var ngx_wow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-wow */ "./node_modules/ngx-wow/esm5/ngx-wow.es5.js");
-/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jarallax */ "./node_modules/jarallax/index.js");
-/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jarallax__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var ngx_wow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-wow */ "./node_modules/ngx-wow/esm5/ngx-wow.es5.js");
+/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jarallax */ "./node_modules/jarallax/index.js");
+/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jarallax__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -222,12 +223,20 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var AppComponent = /** @class */ (function () {
     /*
     * Constructor Method
     */
-    function AppComponent(wowService) {
+    function AppComponent(router, wowService) {
+        var _this = this;
+        this.router = router;
         this.wowService = wowService;
+        router.events.subscribe(function (event) {
+            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationEnd"]) {
+                _this.navActive = event.url;
+            }
+        });
     }
     /*
     * Init Method
@@ -241,7 +250,8 @@ var AppComponent = /** @class */ (function () {
         this.wowService.init();
     };
     AppComponent.ctorParameters = function () { return [
-        { type: ngx_wow__WEBPACK_IMPORTED_MODULE_1__["NgwWowService"] }
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] },
+        { type: ngx_wow__WEBPACK_IMPORTED_MODULE_2__["NgwWowService"] }
     ]; };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -249,7 +259,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         }),
-        __metadata("design:paramtypes", [ngx_wow__WEBPACK_IMPORTED_MODULE_1__["NgwWowService"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], ngx_wow__WEBPACK_IMPORTED_MODULE_2__["NgwWowService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -416,7 +426,23 @@ var AwardsComponent = /** @class */ (function () {
                     margin: 25,
                     nav: true,
                     items: 4,
-                    lazyLoad: true
+                    lazyLoad: true,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: true
+                        },
+                        600: {
+                            items: 3,
+                            nav: false
+                        },
+                        1000: {
+                            items: 5,
+                            nav: true,
+                            loop: false
+                        }
+                    }
                 });
             }, 1000);
         }, function (error) { return console.log(error); });
@@ -837,7 +863,7 @@ var WorkService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".workthumb img {\n  height: 250px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: top;\n     object-position: top; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd29yay9EOlxcd2FtcFxcd3d3XFxqYW1lc2pvbXVhZC5naXRodWIuZGV2L3NyY1xcYXBwXFx3b3JrXFx3b3JrLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLFdBQVc7RUFDWCxvQkFBaUI7S0FBakIsaUJBQWlCO0VBQ2pCLHVCQUFvQjtLQUFwQixvQkFBb0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3dvcmsvd29yay5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi53b3JrdGh1bWIgaW1ne1xyXG4gICAgaGVpZ2h0OiAyNTBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgb2JqZWN0LWZpdDogY292ZXI7XHJcbiAgICBvYmplY3QtcG9zaXRpb246IHRvcDtcclxufSJdfQ== */"
+module.exports = ".workthumb img {\n  height: 250px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: top;\n     object-position: top; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd29yay9DOlxcVXNlcnNcXEphbWVzXFxEZXNrdG9wXFxqYW1lc2pvbXVhZC5naXRodWIuZGV2L3NyY1xcYXBwXFx3b3JrXFx3b3JrLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLFdBQVc7RUFDWCxvQkFBaUI7S0FBakIsaUJBQWlCO0VBQ2pCLHVCQUFvQjtLQUFwQixvQkFBb0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3dvcmsvd29yay5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi53b3JrdGh1bWIgaW1ne1xyXG4gICAgaGVpZ2h0OiAyNTBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgb2JqZWN0LWZpdDogY292ZXI7XHJcbiAgICBvYmplY3QtcG9zaXRpb246IHRvcDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -928,7 +954,7 @@ var WorkComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".work img {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  height: 240px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: top;\n     object-position: top; }\n\n.work:hover img {\n  opacity: 0.3; }\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center; }\n\n.work:hover .middle {\n  opacity: 1; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd29ya3MvRDpcXHdhbXBcXHd3d1xcamFtZXNqb211YWQuZ2l0aHViLmRldi9zcmNcXGFwcFxcd29ya3NcXHdvcmtzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksVUFBVTtFQUNWLGNBQWM7RUFDZCxXQUFXO0VBQ1gsWUFBWTtFQUNaLG9CQUFvQjtFQUNwQixtQ0FBMkI7VUFBM0IsMkJBQTJCO0VBQzNCLGFBQWE7RUFDYixvQkFBaUI7S0FBakIsaUJBQWlCO0VBQ2pCLHVCQUFvQjtLQUFwQixvQkFBb0IsRUFBQTs7QUFFeEI7RUFDSSxZQUFZLEVBQUE7O0FBRWhCO0VBQ0ksb0JBQW9CO0VBQ3BCLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCx3Q0FBZ0M7VUFBaEMsZ0NBQWdDO0VBQ2hDLG9DQUFvQztFQUNwQyxrQkFBa0IsRUFBQTs7QUFFdEI7RUFDSSxVQUFVLEVBQUEiLCJmaWxlIjoic3JjL2FwcC93b3Jrcy93b3Jrcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi53b3JrIGltZyB7XHJcbiAgICBvcGFjaXR5OiAxO1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogYXV0bztcclxuICAgIHRyYW5zaXRpb246IC41cyBlYXNlO1xyXG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgaGVpZ2h0OiAyNDBweDtcclxuICAgIG9iamVjdC1maXQ6IGNvdmVyO1xyXG4gICAgb2JqZWN0LXBvc2l0aW9uOiB0b3A7XHJcbn1cclxuLndvcms6aG92ZXIgaW1nIHtcclxuICAgIG9wYWNpdHk6IDAuMztcclxufVxyXG4ubWlkZGxlIHtcclxuICAgIHRyYW5zaXRpb246IC41cyBlYXNlO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgbGVmdDogNTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLndvcms6aG92ZXIgLm1pZGRsZSB7XHJcbiAgICBvcGFjaXR5OiAxO1xyXG59Il19 */"
+module.exports = ".work img {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  height: 240px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: top;\n     object-position: top; }\n\n.work:hover img {\n  opacity: 0.3; }\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center; }\n\n.work:hover .middle {\n  opacity: 1; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd29ya3MvQzpcXFVzZXJzXFxKYW1lc1xcRGVza3RvcFxcamFtZXNqb211YWQuZ2l0aHViLmRldi9zcmNcXGFwcFxcd29ya3NcXHdvcmtzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksVUFBVTtFQUNWLGNBQWM7RUFDZCxXQUFXO0VBQ1gsWUFBWTtFQUNaLG9CQUFvQjtFQUNwQixtQ0FBMkI7VUFBM0IsMkJBQTJCO0VBQzNCLGFBQWE7RUFDYixvQkFBaUI7S0FBakIsaUJBQWlCO0VBQ2pCLHVCQUFvQjtLQUFwQixvQkFBb0IsRUFBQTs7QUFFeEI7RUFDSSxZQUFZLEVBQUE7O0FBRWhCO0VBQ0ksb0JBQW9CO0VBQ3BCLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCx3Q0FBZ0M7VUFBaEMsZ0NBQWdDO0VBQ2hDLG9DQUFvQztFQUNwQyxrQkFBa0IsRUFBQTs7QUFFdEI7RUFDSSxVQUFVLEVBQUEiLCJmaWxlIjoic3JjL2FwcC93b3Jrcy93b3Jrcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi53b3JrIGltZyB7XHJcbiAgICBvcGFjaXR5OiAxO1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogYXV0bztcclxuICAgIHRyYW5zaXRpb246IC41cyBlYXNlO1xyXG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgaGVpZ2h0OiAyNDBweDtcclxuICAgIG9iamVjdC1maXQ6IGNvdmVyO1xyXG4gICAgb2JqZWN0LXBvc2l0aW9uOiB0b3A7XHJcbn1cclxuLndvcms6aG92ZXIgaW1nIHtcclxuICAgIG9wYWNpdHk6IDAuMztcclxufVxyXG4ubWlkZGxlIHtcclxuICAgIHRyYW5zaXRpb246IC41cyBlYXNlO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgbGVmdDogNTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLndvcms6aG92ZXIgLm1pZGRsZSB7XHJcbiAgICBvcGFjaXR5OiAxO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -1055,7 +1081,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\wamp\www\jamesjomuad.github.dev\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\James\Desktop\jamesjomuad.github.dev\src\main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -10,7 +10,7 @@
             "Laravel",
             "Php"
         ],
-        "description": "<p>A Web App parking management software. Using octobercms that is a laravel base framework.</p><p>Integrates barcode reading and termal printer.</p>",
+        "description": "<p>A Web App parking management software. Using octobercms that is a laravel base framework. Integrates barcode reading and termal printer.</p><p>This project is getting me excite along the way cause this kind of framework is what ive been looking for. It gained me knowledge and felt confident. Its principle is like wordpress but in new technology.</p>",
         "thumbnails": [
             "/assets/images/works/aeroparks/040-Dashboard-Aeroparks.jpg",
             "/assets/images/works/aeroparks/041-Notifications-Aeroparks.jpg",
