@@ -1,5 +1,115 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/about/about.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/about/about.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<br id=\"about\">\n<div class=\"container\">\n  <!-- Section About -->\n  <section class=\"section my-5 pb-4\">\n    <!-- Section title -->\n    <h1 class=\"section-heading text-center mb-5 mt-5 pt-4 wow fadeIn\" style=\"visibility: visible; animation-name: fadeIn;\">Who am I?</h1>\n\n    <!-- First row -->\n    <div class=\"row wow fadeIn\" data-wow-delay=\"0.2s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">\n\n      <!-- Place for photo -->\n      <div class=\"col-lg-5 mb-2\">\n        <img src=\"assets/images/about.jpg\" alt=\"James Jomuad\" class=\"img-fluid z-depth-1\">\n      </div>\n\n      <!-- Text content -->\n      <div class=\"col-lg-7 pb-4\">\n        <p class=\"lead\">I'm a Full Stack Web developer with 6+ years of experience.</p>\n        <blockquote><p>I have worked in different types of industries, but I focused on web application/software development. I am passionate about creating website and worked on its design. I take my inspiration and passion from my environments &amp; colleague. I'm eager to learn new technologies in the internet. I can bring things from nothing into something.</p><p>Laravel and Linux server is one of my current expertise right now. With a strong core skills in PHP, HTML5, Javascript, Angular JS, XML, JSON, MySQL and follow strict OOP principles.</p><p>I'm open to Job opportunities, feel free to contact me.</p></blockquote>\n      </div>\n\n    </div>\n    <!-- /.First row -->\n  </section>\n  <!-- /.Section About -->\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/app.component.html":
+/*!**************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/app.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mdb-navbar SideClass=\"navbar fixed-top navbar-expand-lg navbar-dark ie-nav rgba-red-strong\" [containerInside]=\"false\">\r\n  <links class=\"d-flex justify-content-center\">\r\n    <ul class=\"navbar-nav nav nav-pills\">\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#home\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#about\">About</a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#skills\">Skills</a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n          <a class=\"nav-link\" href=\"/#/#works\" >Works</a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect>\r\n        <a class=\"nav-link\" href=\"/#/#certificates\">Certificates</a>\r\n      </li>\r\n      <li class=\"nav-item active waves-light mx-2\" mdbWavesEffect ng-class=\"{'active': active === true}\" ng-click=\"active = !active\">\r\n        <a class=\"nav-link\" href=\"/#/#contact\">Contact</a>\r\n      </li>\r\n    </ul>\r\n  </links>\r\n  <div class=\"clearfix p-3\">&nbsp;</div>\r\n</mdb-navbar>\r\n\r\n<router-outlet></router-outlet>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/awards/awards.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/awards/awards.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"certificates\"></div>\n<div class=\"view intro jarallax\" style=\"background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg); background-attachment: fixed; min-height: 700px\">\n  <div class=\"full-bg-img mask rgba-purple-slight\">\n\n    <div class=\"container-fluid\">\n      <div class=\"row pt-5 mt-4\">\n        <div class=\"col-md-12\">\n            <h2 class=\"text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn\" data-wow-delay=\"0.2s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">Certificates/<strong>Awards</strong></h2>\n            <!-- <p class=\"text-center w-responsive mx-auto wow fadeIn my-5\" style=\"visibility: visible; animation-name: fadeIn;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste provident, voluptatum voluptatibus aut modi aspernatur autem impedit, eius, debitis earum voluptatem. Quaerat hic aspernatur laborum magni earum. At, officiis!</p> -->\n        </div>\n      </div>\n      <div class=\"owl-carousel\" #carousel>\n        <div *ngFor=\"let award of awards\">\n          <a href=\"{{award.thumbnail}}\" class=\"fancybox\" data-fancybox=\"gallery\">\n            <img src=\"{{ award.thumbnail }}\" class=\"img-responsive img-fluid z-depth-1 m-4\">\n          </a>\n        </div>\n      </div>\n    </div>\n    <div class=\"clearfix mb-5\"></div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/contact/contact.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/contact/contact.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<!-- Contact Section -->\n<div id=\"contact\" class=\"container\">\n\n<!--Section: Contact v.2-->\n<section class=\"section contact-section mt-4 mb-5\">\n    <!--Section heading-->\n    <h2 class=\"text-center text-uppercase my-5 pt-5 wow fadeIn\" data-wow-delay=\"0.2s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">Hire <strong>me</strong></h2>\n\n    <div class=\"row wow fadeIn\" data-wow-delay=\"0.4s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;\">\n        <!--First column-->\n        <div class=\"col-md-8 mb-5\">\n            <form #contact=\"ngForm\">\n                <!--First row-->\n                <div class=\"row\">\n\n                    <!--First column-->\n                    <div class=\"col-md-6\">\n                        <div class=\"md-form mb-0\">\n                            <div class=\"md-form mb-0\">\n                                <input type=\"text\" id=\"form41\" class=\"form-control\" name=\"name\" placeholder=\"Name\" ngModel>\n                                <!-- <label for=\"form41\" class=\"\">Your name</label> -->\n                            </div>\n                        </div>\n                    </div>\n                    <!--Second column-->\n                    <div class=\"col-md-6\">\n                        <div class=\"md-form mb-0\">\n                            <div class=\"md-form mb-0\">\n                                <input type=\"text\" id=\"form52\" class=\"form-control\" name=\"email\" placeholder=\"Email\" ngModel>\n                                <!-- <label for=\"form52\" class=\"\">Your email</label> -->\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <!--/.First row-->\n\n                <!--Third row-->\n                <div class=\"row\">\n                    <!--First column-->\n                    <div class=\"col-md-12\">\n                        <div class=\"md-form mb-0\">\n                            <textarea type=\"text\" id=\"form76\" class=\"md-textarea form-control\" rows=\"3\" placeholder=\"Your message\" name=\"body\" ngModel></textarea>\n                            <!-- <label for=\"form76\">Your message</label> -->\n                        </div>\n                    </div>\n                </div>\n                <!--/.Third row-->\n\n                <div class=\"text-center text-md-left mt-4\">\n                    <button class=\"btn btn-primary waves-effect waves-light\" type=\"button\" (click)=\"contactMe(contact.value)\">Send</button>\n                </div>\n            </form>\n        </div>\n        <!--.First column-->\n\n        <!--Second column-->\n        <div class=\"col-md-4\">\n            <ul class=\"contact-icons list-unstyled text-center\">\n                <li>\n                    <a href=\"#\" onclick=\"event.preventDefault()\" ><i class=\"fas fa-map-marker-alt fa-2x\"></i></a>\n                    <p>Cebu City, Philippines</p>\n                </li>\n                <li>\n                    <a href=\"#\" onclick=\"event.preventDefault()\" ><i class=\"fas fa-phone fa-2x\"></i></a>\n                    <p>+63 995 096 1902</p>\n                </li>\n                <li>\n                    <a href=\"mailto:st.james.jomuad@gmail.com\"><i class=\"fas fa-envelope fa-2x\"></i></a>\n                    <p>st.james.jomuad@gmail.com</p>\n                </li>\n            </ul>\n        </div>\n        <!--.Second column-->\n    </div>\n\n</section>\n<!--/Section: Contact v.2-->"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/header/header.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/header/header.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"home\" class=\"view intro jarallax\" style=\"background-image: url(/assets/images/banner-1.jpg); background-attachment: fixed; height: 1200px;\">\n<div class=\"full-bg-img mask pattern-2\">\n    <div class=\"container\">\n    <div class=\"d-flex align-items-center d-flex justify-content-center\" style=\"height: 1200px\">\n        <div class=\"row\">\n        <div class=\"col-md-12 wow fadeIn mb-3\">\n            <div class=\"intro-info-content text-center\">\n            <h2 class=\"h1 display-1 mb-2 wow fadeInDown\" data-wow-delay=\"0.3s\">\n                <span class=\"white-text\">JAMES</span> \n                <a class=\"blue-text font-bold\"> JOMUAD</a>\n            </h2>\n            <h5 class=\"font-up mb-3 mt-1 font-bold wow fadeIn text-info\" data-wow-delay=\"0.4s\">\n                <i class=\"fa fa-less-than\"></i>\n                <i class=\"fa fa-hashtag\"></i>\n                <b class=\"orange-text\"> Full Stack Web Developer </b>\n                <i class=\"fa fa-greater-than\"></i>\n            </h5>\n            <a mdbBtn href=\"#contact\" color=\"light-blue\" size=\"lg\" class=\"wow fadeIn waves-light\" mdbWavesEffect data-wow-delay=\"0.4s\">Hire Me</a>\n            <a mdbBtn href=\"#about\" color=\"indigo\" size=\"lg\" class=\"wow fadeIn waves-light\" mdbWavesEffect data-wow-delay=\"0.4s\">About me</a></div>\n        </div>\n        </div>\n    </div>\n    </div>\n</div>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/home/home.component.html":
+/*!********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/home/home.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-header></app-header>\n\n<app-about></app-about>\n\n<app-skills></app-skills>\n\n<app-works></app-works>\n\n<app-awards></app-awards>\n\n<app-contact></app-contact>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/page-not-found/page-not-found.component.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/page-not-found/page-not-found.component.html ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"home\" class=\"view intro jarallax\" style=\"background-image: url(/assets/images/404.jpg); background-attachment: fixed; height: 1500px;\">\n    <div class=\"full-bg-img\">\n        <div class=\"container\">\n        <div class=\"d-flex align-items-center d-flex justify-content-center\" style=\"height: 1200px\">\n            <div class=\"row\">\n                <div class=\"col-md-12 wow fadeIn mb-3\">\n                    <div class=\"intro-info-content text-center\">\n                        <h1 class=\"h1 orange-text\"> <span class=\"blue-text\">4</span>0<span class=\"blue-text\">4</span> </h1>\n                        <h3 class=\"white-text\">This page could not be found!</h3>\n                    </div>\n                </div>\n            </div>\n        </div>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/skills/skills.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/skills/skills.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<br id=\"skills\">\n<div class=\"view intro jarallax\" style=\"background-image: url(/assets/images/skills.jpg); background-attachment: fixed;  background-size: cover; min-height: 700px\">\n  <div class=\"full-bg-img mask rgba-white-strong\">\n      <div class=\"container py-4 pt-4\">\n          <section>\n              <!-- First row -->\n              <div class=\"row py-5\">\n\n                  <!--First column-->\n                  <div class=\"col-lg-6 col-md-12 mb-3 wow fadeIn\" data-wow-delay=\"0.5s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;\">\n                    <!--Section heading-->\n                    <div class=\"d-flex justify-content-start\">\n                        <h4 class=\"text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn\" data-wow-delay=\"0.4s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">My <strong>experience</strong></h4>\n                    </div>\n\n                    <!--Company Timeline-->\n                    <section style=\"overflow:auto;max-height:450px;\">\n                      <!-- ng Loop -->\n                      <blockquote *ngFor=\"let xp of experience\" class=\"blockquote bq-warning mb-4\">\n                          <div class=\"row\"> <i class=\"fas fa-briefcase fa-x mb-1 mr-3 ml-3\" aria-hidden=\"true\"></i>\n                            <h5 class=\"font-weight-bold mb-3\">{{xp.title}}</h5>\n                          </div>\n                          <p class=\"font-weight-bold ml-1 dark-grey-text p-0 m-0\">{{xp.company}}</p>\n                          <p class=\"font-weight-bold ml-1 dark-grey-text p-0 m-0\">{{xp.date}}</p>\n                          <p *ngIf=\"xp.description\" [innerHtml]=\"xp.description\" class=\"mb-0 ml-1 light-grey-text\"></p>\n                      </blockquote>\n                    </section>\n                  </div>\n\n                  <!-- Skillsets -->\n                  <div class=\"col-lg-5 offset-lg-1 col-md-12 mb-4 wow fadeIn\" data-wow-delay=\"0.5s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;\">\n                      <!--Second heading-->\n                      <div class=\"d-flex justify-content-start\">\n                          <h4 class=\"text-center text-uppercase mb-5 pb-3 mt-4 wow fadeIn\" data-wow-delay=\"0.2s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">Development <strong>Skills</strong></h4>\n                      </div>\n                      <!--Description-->\n                      <section class=\"pr-4\" style=\"overflow:auto;max-height:450px;\">\n                        <div *ngFor=\"let skill of skillset\">\n                          <p class=\"black-text text-uppercase font-weight-bold pt-3\" align=\"justify\">{{skill.title}}</p>\n                          <div class=\"progress\">\n                            <div class=\"progress-bar\" role=\"progressbar\"  [style.width.%]=\"skill.percent\"></div>\n                          </div>\n                        </div>\n                      </section>\n                  </div>\n                  <!--/Second column-->\n              </div>\n              <!--/First row-->\n          </section>\n      </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/work/work.component.html":
+/*!********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/work/work.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"view intro\" style=\"min-height: 700px\">\n    <div class=\"full-bg-img rgba-red-strong\">\n        <div class=\"container pb-5\">\n            <div class=\"row py-5\">\n                <div class=\"col-lg-12\">\n                    <h1 class=\"text-center text-uppercase mt-5 py-5 wow fadeIn\" data-wow-delay=\"0.2s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">\n                        {{work.name}}\n                    </h1>\n                    <div *ngIf=\"work.description\" [innerHtml]=\"work.description\"></div>\n                </div>\n            </div>\n\n            <div *ngIf=\"work.technology\">\n                <hr>\n                <mdb-badge *ngFor=\"let tech of work.technology\" pill=\"true\" primary=\"true\" class=\"mx-1\">{{tech}}</mdb-badge>\n                <hr class=\"mb-5\">\n            </div>\n            \n\n            <div class=\"row wow fadeIn\" data-wow-delay=\"0.4s\">\n                <div *ngFor=\"let thumb of work.thumbnails\" class=\"col-md-4 p-2 workthumb\">\n                    <a href=\"{{thumb}}\" class=\"fancybox\" data-fancybox=\"gallery\">\n                        <img src=\"{{ thumb }}\" class=\"img-fluid z-depth-1\">\n                    </a>\n                </div>\n            </div>\n\n            <div class=\"clearfix m-4\"></div>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/works/works.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/works/works.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"works\"></div>\n<div class=\"view intro\" style=\"min-height: 700px\">\n  <div class=\"full-bg-img rgba-purple-slight\">\n    <div class=\"container pb-5\">\n      <div class=\"row py-5\">\n        <div class=\"col-lg-12\">\n          <h2 class=\"text-center text-uppercase mt-4 wow fadeIn\" data-wow-delay=\"0.2s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;\">My <strong>Works</strong></h2>\n          <!-- <p class=\"text-center w-responsive mx-auto wow fadeIn my-5\" style=\"visibility: visible; animation-name: fadeIn;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste provident, voluptatum voluptatibus aut modi aspernatur autem impedit, eius, debitis earum voluptatem. Quaerat hic aspernatur laborum magni earum. At, officiis!</p> -->\n        </div>\n      </div>\n\n      <div class=\"row wow fadeIn\" data-wow-delay=\"0.4s\" style=\"overflow: auto; max-height: 775px;\">\n        <div *ngFor=\"let work of works\" class=\"col-md-4 p-2 work\">\n          <a href=\"/#/work/{{work.route}}\" data-size=\"1600x1067\">\n            <img src=\"{{ getThumb(work.thumbnails) }}\" class=\"img-fluid z-depth-1\">\n            <div class=\"middle\">\n              <h3 class=\"black-text\">{{ work.name }}</h3>\n            </div>\n          </a>\n        </div>\n      </div>\n      <div class=\"clearfix m-4\"></div>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /*!**********************************************************!*\
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
@@ -23,14 +133,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/about/about.component.html":
+/***/ "./src/app/about/about.component.scss":
 /*!********************************************!*\
-  !*** ./src/app/about/about.component.html ***!
+  !*** ./src/app/about/about.component.scss ***!
   \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"about\" class=\"flex-wrapper\">\n    <div class=\"col-xs-12 col-md-9 col-lg-8\">\n        <h2>About Me</h2>\n        <p>Welcome to my page. Its a place where I can encourange, inspire, and motivate others specially to those young one's. Its my pleasure to help others find there encouragement and fulfillment in there works. I also share ideas and techniques from my personal experience of getting you solve your problems. I have the right tools that can be useful in making projects.</p>\n        \n        <p>My name is James Jomuad, I'm a Full Stack web developer. I graduated with a Bachelor's Degree in college. I started my career as a web designer. After a frew months, I was then trained as a Wordpress developer. My basic task was to convert my designed website, from psd to html and integrated the wordpress. At first it was hard but if doing it repeatedly, difficulty level goes low and it last for one year. And then decided for a new opportunity to step up for my career growth.</p>\n\n        <p></p>\n\n        <p>I'm open to Job opportunities, feel free to click the Contact button to get in touch.</p>\n    </div>\n</section>\n"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Fib3V0L2Fib3V0LmNvbXBvbmVudC5zY3NzIn0= */"
 
 /***/ }),
 
@@ -63,7 +173,8 @@ var AboutComponent = /** @class */ (function () {
     AboutComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-about',
-            template: __webpack_require__(/*! ./about.component.html */ "./src/app/about/about.component.html"),
+            template: __webpack_require__(/*! raw-loader!./about.component.html */ "./node_modules/raw-loader/index.js!./src/app/about/about.component.html"),
+            styles: [__webpack_require__(/*! ./about.component.scss */ "./src/app/about/about.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], AboutComponent);
@@ -74,25 +185,14 @@ var AboutComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/app.component.css":
-/*!***********************************!*\
-  !*** ./src/app/app.component.css ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/app.component.html":
+/***/ "./src/app/app.component.scss":
 /*!************************************!*\
-  !*** ./src/app/app.component.html ***!
+  !*** ./src/app/app.component.scss ***!
   \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <section class=\"col-sm-3 col-lg-3\">\n    <app-sidebar-left></app-sidebar-left>\n  </section>\n  <section id=\"page-content\" class=\"col-sm-9 col-lg-9\">\n      <div class=\"col-md-12\">\n        <router-outlet></router-outlet>\n      </div>\n  </section>\n</div>\n"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
@@ -107,6 +207,9 @@ module.exports = "<div class=\"container-fluid\">\n  <section class=\"col-sm-3 c
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var ngx_wow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-wow */ "./node_modules/ngx-wow/esm5/ngx-wow.es5.js");
+/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jarallax */ "./node_modules/jarallax/index.js");
+/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jarallax__WEBPACK_IMPORTED_MODULE_2__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -117,21 +220,36 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var AppComponent = /** @class */ (function () {
-    function AppComponent() {
-        this.menus = [
-            'Home',
-            'About',
-            'Works'
-        ];
+    /*
+    * Constructor Method
+    */
+    function AppComponent(wowService) {
+        this.wowService = wowService;
     }
+    /*
+    * Init Method
+    */
+    AppComponent.prototype.ngOnInit = function () { };
+    /*
+    * After View Method
+    */
+    AppComponent.prototype.ngAfterViewInit = function () {
+        jarallax(document.querySelectorAll('.jarallax'), { speed: 0.2 });
+        this.wowService.init();
+    };
+    AppComponent.ctorParameters = function () { return [
+        { type: ngx_wow__WEBPACK_IMPORTED_MODULE_1__["NgwWowService"] }
+    ]; };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
-            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+            template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
+            styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [ngx_wow__WEBPACK_IMPORTED_MODULE_1__["NgwWowService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -153,20 +271,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _sidebar_left_sidebar_left_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sidebar-left/sidebar-left.component */ "./src/app/sidebar-left/sidebar-left.component.ts");
-/* harmony import */ var _projects_projects_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./projects/projects.component */ "./src/app/projects/projects.component.ts");
-/* harmony import */ var _project_project_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./project/project.component */ "./src/app/project/project.component.ts");
-/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
-/* harmony import */ var _project_single_project_single_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./project-single/project-single.component */ "./src/app/project-single/project-single.component.ts");
-/* harmony import */ var _awards_awards_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./awards/awards.component */ "./src/app/awards/awards.component.ts");
-/* harmony import */ var _award_single_award_single_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./award-single/award-single.component */ "./src/app/award-single/award-single.component.ts");
-/* harmony import */ var _portfolio_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./portfolio.service */ "./src/app/portfolio.service.ts");
-/* harmony import */ var _cert_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./cert.service */ "./src/app/cert.service.ts");
-/* harmony import */ var _terms_conditions_terms_conditions_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./terms-conditions/terms-conditions.component */ "./src/app/terms-conditions/terms-conditions.component.ts");
+/* harmony import */ var angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-bootstrap-md */ "./node_modules/angular-bootstrap-md/fesm5/angular-bootstrap-md.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _skills_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./skills.service */ "./src/app/skills.service.ts");
+/* harmony import */ var _work_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./work.service */ "./src/app/work.service.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var ngx_wow__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-wow */ "./node_modules/ngx-wow/esm5/ngx-wow.es5.js");
+/* harmony import */ var _awards_awards_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./awards/awards.component */ "./src/app/awards/awards.component.ts");
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+/* harmony import */ var _skills_skills_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./skills/skills.component */ "./src/app/skills/skills.component.ts");
+/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _works_works_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./works/works.component */ "./src/app/works/works.component.ts");
+/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _work_work_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./work/work.component */ "./src/app/work/work.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -190,40 +310,25 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+// import { $ } from 'jquery';
 var appRoutes = [
     {
         path: '',
-        component: _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_17__["HomeComponent"],
         data: { title: 'Home' }
     },
     {
-        path: 'projects',
-        component: _projects_projects_component__WEBPACK_IMPORTED_MODULE_8__["ProjectsComponent"],
-        data: { title: 'Projects' }
+        path: 'works',
+        component: _works_works_component__WEBPACK_IMPORTED_MODULE_15__["WorksComponent"],
+        data: { title: 'Works' }
     },
     {
-        path: 'project/:name',
-        component: _project_single_project_single_component__WEBPACK_IMPORTED_MODULE_11__["ProjectSingleComponent"]
+        path: 'work/:route',
+        component: _work_work_component__WEBPACK_IMPORTED_MODULE_18__["WorkComponent"]
     },
-    {
-        path: 'awards',
-        component: _awards_awards_component__WEBPACK_IMPORTED_MODULE_12__["AwardsComponent"]
-    },
-    {
-        path: 'award/:name',
-        component: _award_single_award_single_component__WEBPACK_IMPORTED_MODULE_13__["AwardSingleComponent"],
-    },
-    {
-        path: 'about',
-        component: _about_about_component__WEBPACK_IMPORTED_MODULE_10__["AboutComponent"],
-        data: { title: 'About' }
-    },
-    {
-        path: 'terms-and-conditions',
-        component: _terms_conditions_terms_conditions_component__WEBPACK_IMPORTED_MODULE_16__["TermsConditionsComponent"],
-        data: { title: 'About' }
-    },
-    { path: '**', component: _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_5__["PageNotFoundComponent"] }
+    { path: '**', component: _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_16__["PageNotFoundComponent"] }
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -231,25 +336,27 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_5__["PageNotFoundComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
-                _sidebar_left_sidebar_left_component__WEBPACK_IMPORTED_MODULE_7__["SidebarLeftComponent"],
-                _projects_projects_component__WEBPACK_IMPORTED_MODULE_8__["ProjectsComponent"],
-                _project_project_component__WEBPACK_IMPORTED_MODULE_9__["ProjectComponent"],
-                _about_about_component__WEBPACK_IMPORTED_MODULE_10__["AboutComponent"],
-                _project_single_project_single_component__WEBPACK_IMPORTED_MODULE_11__["ProjectSingleComponent"],
-                _awards_awards_component__WEBPACK_IMPORTED_MODULE_12__["AwardsComponent"],
-                _award_single_award_single_component__WEBPACK_IMPORTED_MODULE_13__["AwardSingleComponent"],
-                _terms_conditions_terms_conditions_component__WEBPACK_IMPORTED_MODULE_16__["TermsConditionsComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+                _awards_awards_component__WEBPACK_IMPORTED_MODULE_10__["AwardsComponent"],
+                _contact_contact_component__WEBPACK_IMPORTED_MODULE_11__["ContactComponent"],
+                _skills_skills_component__WEBPACK_IMPORTED_MODULE_12__["SkillsComponent"],
+                _about_about_component__WEBPACK_IMPORTED_MODULE_13__["AboutComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_14__["HeaderComponent"],
+                _works_works_component__WEBPACK_IMPORTED_MODULE_15__["WorksComponent"],
+                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_16__["PageNotFoundComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_17__["HomeComponent"],
+                _work_work_component__WEBPACK_IMPORTED_MODULE_18__["WorkComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes, { useHash: true }),
-                _angular_http__WEBPACK_IMPORTED_MODULE_3__["HttpModule"]
+                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes, { useHash: true, anchorScrolling: 'enabled' }),
+                angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_3__["MDBBootstrapModule"].forRoot(),
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
+                ngx_wow__WEBPACK_IMPORTED_MODULE_9__["NgwWowModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"]
             ],
-            providers: [_portfolio_service__WEBPACK_IMPORTED_MODULE_14__["PortfolioService"], _cert_service__WEBPACK_IMPORTED_MODULE_15__["CertService"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            providers: [_skills_service__WEBPACK_IMPORTED_MODULE_6__["SkillsService"], _work_service__WEBPACK_IMPORTED_MODULE_7__["WorkService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -259,103 +366,14 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/award-single/award-single.component.css":
-/*!*********************************************************!*\
-  !*** ./src/app/award-single/award-single.component.css ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/award-single/award-single.component.html":
-/*!**********************************************************!*\
-  !*** ./src/app/award-single/award-single.component.html ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<h1>{{Cert.title}}</h1>\n{{Cert.content}}\n\n<section class=\"flex-wrapper\">\n    <div class=\"col-xs-12 col-md-9 col-lg-8\">\n        <img src=\"{{Cert.thumbnail}}\" class=\"img-thumbnail\">\n    </div>\n</section>"
-
-/***/ }),
-
-/***/ "./src/app/award-single/award-single.component.ts":
-/*!********************************************************!*\
-  !*** ./src/app/award-single/award-single.component.ts ***!
-  \********************************************************/
-/*! exports provided: AwardSingleComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AwardSingleComponent", function() { return AwardSingleComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _cert_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../cert.service */ "./src/app/cert.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var AwardSingleComponent = /** @class */ (function () {
-    function AwardSingleComponent(route, CertService) {
-        var _this = this;
-        route.params.subscribe(function (params) {
-            console.log(params.name);
-            CertService.getCert().subscribe(function (response) {
-                _this.Cert = _this.getData(params.name, response.json());
-            }, function (error) { return console.log(error); });
-        });
-    }
-    AwardSingleComponent.prototype.ngOnInit = function () { };
-    AwardSingleComponent.prototype.getData = function (name, data) {
-        return data.filter(function (obj) {
-            return obj.route === name;
-        })[0];
-    };
-    AwardSingleComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-award-single',
-            template: __webpack_require__(/*! ./award-single.component.html */ "./src/app/award-single/award-single.component.html"),
-            styles: [__webpack_require__(/*! ./award-single.component.css */ "./src/app/award-single/award-single.component.css")]
-        }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _cert_service__WEBPACK_IMPORTED_MODULE_2__["CertService"]])
-    ], AwardSingleComponent);
-    return AwardSingleComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/awards/awards.component.css":
-/*!*********************************************!*\
-  !*** ./src/app/awards/awards.component.css ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "#awards{}\r\n\r\n#awards .well{\r\n    background: #fff;\r\n    min-height: 250px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    border: 15px double #333;\r\n    flex-direction: column;\r\n}\r\n\r\n#awards .well a{\r\n    display: block;\r\n    text-align: center;\r\n}"
-
-/***/ }),
-
-/***/ "./src/app/awards/awards.component.html":
+/***/ "./src/app/awards/awards.component.scss":
 /*!**********************************************!*\
-  !*** ./src/app/awards/awards.component.html ***!
+  !*** ./src/app/awards/awards.component.scss ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"awards\">\n  <div class=\"page-header\">\n    <h1>Awards/Certificates</h1>\n  </div>\n\n  <div class=\"row\">\n      <div class=\"col-md-4\" *ngFor=\"let Cert of Certs\">\n          <div class=\"well\">\n            <h4><a routerLink=\"{{'/award/'+Cert.route}}\">{{Cert.title}}</a></h4>\n            <i>{{Cert.date}}</i>\n          </div>\n      </div>\n  </div>\n  \n</div>\n"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2F3YXJkcy9hd2FyZHMuY29tcG9uZW50LnNjc3MifQ== */"
 
 /***/ }),
 
@@ -370,7 +388,7 @@ module.exports = "<div id=\"awards\">\n  <div class=\"page-header\">\n    <h1>Aw
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AwardsComponent", function() { return AwardsComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _cert_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../cert.service */ "./src/app/cert.service.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -383,24 +401,36 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var AwardsComponent = /** @class */ (function () {
-    function AwardsComponent(CertService) {
-        this.CertService = CertService;
+    function AwardsComponent(http) {
+        this.http = http;
+        this.awards = [];
     }
-    AwardsComponent.prototype.ngOnInit = function () {
+    AwardsComponent.prototype.ngOnInit = function () { };
+    AwardsComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
-        this.CertService
-            .getCert()
-            .subscribe(function (response) {
-            _this.Certs = response.json();
+        this.http.get('./assets/awards.json').subscribe(function (response) {
+            _this.awards = response;
+            setTimeout(function () {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 25,
+                    nav: true,
+                    items: 4,
+                    lazyLoad: true
+                });
+            }, 1000);
         }, function (error) { return console.log(error); });
     };
+    AwardsComponent.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    ]; };
     AwardsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-awards',
-            template: __webpack_require__(/*! ./awards.component.html */ "./src/app/awards/awards.component.html"),
-            styles: [__webpack_require__(/*! ./awards.component.css */ "./src/app/awards/awards.component.css")]
+            template: __webpack_require__(/*! raw-loader!./awards.component.html */ "./node_modules/raw-loader/index.js!./src/app/awards/awards.component.html"),
+            styles: [__webpack_require__(/*! ./awards.component.scss */ "./src/app/awards/awards.component.scss")]
         }),
-        __metadata("design:paramtypes", [_cert_service__WEBPACK_IMPORTED_MODULE_1__["CertService"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], AwardsComponent);
     return AwardsComponent;
 }());
@@ -409,18 +439,30 @@ var AwardsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/cert.service.ts":
-/*!*********************************!*\
-  !*** ./src/app/cert.service.ts ***!
-  \*********************************/
-/*! exports provided: CertService */
+/***/ "./src/app/contact/contact.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/contact/contact.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhY3QvY29udGFjdC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/contact/contact.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/contact/contact.component.ts ***!
+  \**********************************************/
+/*! exports provided: ContactComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CertService", function() { return CertService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactComponent", function() { return ContactComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -432,43 +474,99 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-var CertService = /** @class */ (function () {
-    function CertService(http) {
-        this.http = http;
+var ContactComponent = /** @class */ (function () {
+    function ContactComponent() {
     }
-    CertService.prototype.getCert = function () {
-        return this.http.get('assets/json/cert.json');
+    ContactComponent.prototype.ngOnInit = function () { };
+    ContactComponent.prototype.ngAfterViewInit = function () { };
+    ContactComponent.prototype.contactMe = function (form) {
+        var mail = jquery__WEBPACK_IMPORTED_MODULE_1__('[href*="mailto"]').attr('href') + "?";
+        mail += [
+            'subject=',
+            form.name,
+            ' - ',
+            form.email,
+            '&body=',
+            form.body
+        ].join('');
+        document.location.href = mail;
+        console.log(mail);
     };
-    CertService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_1__["Http"]])
-    ], CertService);
-    return CertService;
+    ContactComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-contact',
+            template: __webpack_require__(/*! raw-loader!./contact.component.html */ "./node_modules/raw-loader/index.js!./src/app/contact/contact.component.html"),
+            styles: [__webpack_require__(/*! ./contact.component.scss */ "./src/app/contact/contact.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ContactComponent);
+    return ContactComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/home/home.component.css":
-/*!*****************************************!*\
-  !*** ./src/app/home/home.component.css ***!
-  \*****************************************/
+/***/ "./src/app/header/header.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/header/header.component.scss ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".banner{\r\n    justify-content: center;\r\n}\r\n\r\n\r\n.banner blockquote{\r\n    position: relative;\r\n    border: none;\r\n}\r\n\r\n\r\n.banner blockquote::before{\r\n    content: open-quote;\r\n    color: #469eea;\r\n    font-size: 50px;\r\n    height: 20px;\r\n    position: absolute;\r\n    margin: -25px 0 0 -20px;\r\n}\r\n\r\n\r\n.banner blockquote::after{\r\n    content: close-quote;\r\n    color: #469eea;\r\n    font-size: 50px;\r\n    height: 20px;\r\n    position: absolute;\r\n    margin: -20px 0 0 -20px;\r\n    right: 0;\r\n}\r\n\r\n\r\n.banner h5{\r\n    font-weight: bold;\r\n    margin: 15px 0;\r\n}\r\n\r\n\r\n.banner h2 .text-primary{\r\n    font-size: 50px;\r\n    height: 100vh;\r\n    text-shadow: 0 1px #fff;\r\n    font-weight: bold;\r\n}\r\n"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MifQ== */"
 
 /***/ }),
 
-/***/ "./src/app/home/home.component.html":
+/***/ "./src/app/header/header.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/header/header.component.ts ***!
+  \********************************************/
+/*! exports provided: HeaderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HeaderComponent = /** @class */ (function () {
+    function HeaderComponent() {
+    }
+    HeaderComponent.prototype.ngOnInit = function () {
+    };
+    HeaderComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-header',
+            template: __webpack_require__(/*! raw-loader!./header.component.html */ "./node_modules/raw-loader/index.js!./src/app/header/header.component.html"),
+            styles: [__webpack_require__(/*! ./header.component.scss */ "./src/app/header/header.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HeaderComponent);
+    return HeaderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.scss":
 /*!******************************************!*\
-  !*** ./src/app/home/home.component.html ***!
+  !*** ./src/app/home/home.component.scss ***!
   \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"flex-wrapper banner\">\n    <div class=\"col-xs-12 col-md-9 col-lg-8\">\n        <h2>I am <span class=\"text-primary\">James Jomuad</span></h2>\n        <h5>Full Stack Web Developer</h5>\n\n        <blockquote>\n            <p>I have worked in different types of industries, but I focused on web application/software development. Its been 5 years in my career as a web developer. I am passionate about creating website and worked on its design. I take my inspiration and passion from my environments & colleague. Music boost my productivity and helped me fucos on my work with matching coffee. I can bring things from nothing into something.</p>\n            \n            <p>Laravel and Linux server is one of my current expertise right now. With a strong core skills in PHP, HTML5, Javascript, Angular JS, XML, JSON, MySQL and follow strict OOP principles.</p>\n\n            <p>I'm open to Job opportunities, feel free to contact me.</p>\n        </blockquote>\n    </div>\n</header>\n\n<section class=\"featured\">\n    <div class=\"container-fluid\">\n        <h2><b>Featured</b></h2>\n\n        <div *ngIf=\"features\">\n            <div class=\"row\">\n                <div class=\"col-md-4 project\" *ngFor=\"let project of features\">\n                    <app-project [project]=\"project\"></app-project>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
@@ -483,7 +581,6 @@ module.exports = "<header class=\"flex-wrapper banner\">\n    <div class=\"col-x
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _portfolio_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../portfolio.service */ "./src/app/portfolio.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -494,28 +591,19 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(portfolioService) {
-        this.portfolioService = portfolioService;
+    function HomeComponent() {
     }
     HomeComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.portfolioService
-            .getPortfolio()
-            .subscribe(function (response) { return _this.onProject(response); }, function (error) { return console.log(error); });
-    };
-    HomeComponent.prototype.onProject = function (res) {
-        // get the first 6 project
-        this.features = res.json().slice(0, 9);
+        jarallax(document.querySelectorAll('.jarallax'), { speed: 0.2 });
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-home',
-            template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
-            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
+            template: __webpack_require__(/*! raw-loader!./home.component.html */ "./node_modules/raw-loader/index.js!./src/app/home/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/home/home.component.scss")]
         }),
-        __metadata("design:paramtypes", [_portfolio_service__WEBPACK_IMPORTED_MODULE_1__["PortfolioService"]])
+        __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -524,25 +612,14 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/page-not-found/page-not-found.component.css":
-/*!*************************************************************!*\
-  !*** ./src/app/page-not-found/page-not-found.component.css ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".page-404{\r\n    font-size: 40px;\r\n    padding: 20px;\r\n    text-align: center;\r\n    font-family: 'Raleway', sans-serif;\r\n    height: 100vh;\r\n    align-items: center;\r\n    display: flex;\r\n    background: url(/assets/images/bug.png) no-repeat right bottom #ffffff;\r\n    color: #000000;\r\n}"
-
-/***/ }),
-
-/***/ "./src/app/page-not-found/page-not-found.component.html":
+/***/ "./src/app/page-not-found/page-not-found.component.scss":
 /*!**************************************************************!*\
-  !*** ./src/app/page-not-found/page-not-found.component.html ***!
+  !*** ./src/app/page-not-found/page-not-found.component.scss ***!
   \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-404\">\n    <div class=\"title\">Sorry, the page you are looking for could not be found.</div>\n</div>"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2Utbm90LWZvdW5kL3BhZ2Utbm90LWZvdW5kLmNvbXBvbmVudC5zY3NzIn0= */"
 
 /***/ }),
 
@@ -557,6 +634,8 @@ module.exports = "<div class=\"page-404\">\n    <div class=\"title\">Sorry, the 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageNotFoundComponent", function() { return PageNotFoundComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jarallax */ "./node_modules/jarallax/index.js");
+/* harmony import */ var jarallax__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jarallax__WEBPACK_IMPORTED_MODULE_1__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -567,16 +646,18 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var PageNotFoundComponent = /** @class */ (function () {
     function PageNotFoundComponent() {
     }
     PageNotFoundComponent.prototype.ngOnInit = function () {
+        jarallax(document.querySelectorAll('.jarallax'), { speed: 0.2 });
     };
     PageNotFoundComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-page-not-found',
-            template: __webpack_require__(/*! ./page-not-found.component.html */ "./src/app/page-not-found/page-not-found.component.html"),
-            styles: [__webpack_require__(/*! ./page-not-found.component.css */ "./src/app/page-not-found/page-not-found.component.css")]
+            template: __webpack_require__(/*! raw-loader!./page-not-found.component.html */ "./node_modules/raw-loader/index.js!./src/app/page-not-found/page-not-found.component.html"),
+            styles: [__webpack_require__(/*! ./page-not-found.component.scss */ "./src/app/page-not-found/page-not-found.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], PageNotFoundComponent);
@@ -587,19 +668,18 @@ var PageNotFoundComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/portfolio.service.ts":
-/*!**************************************!*\
-  !*** ./src/app/portfolio.service.ts ***!
-  \**************************************/
-/*! exports provided: PortfolioService */
+/***/ "./src/app/skills.service.ts":
+/*!***********************************!*\
+  !*** ./src/app/skills.service.ts ***!
+  \***********************************/
+/*! exports provided: SkillsService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PortfolioService", function() { return PortfolioService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillsService", function() { return SkillsService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -611,66 +691,171 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-
-var PortfolioService = /** @class */ (function () {
-    function PortfolioService(http) {
+var SkillsService = /** @class */ (function () {
+    function SkillsService(http) {
         this.http = http;
     }
-    PortfolioService.prototype.getPortfolio = function () {
-        return this.http.get('assets/json/projects.json');
+    SkillsService.prototype.get = function () {
+        return this.http.get('./assets/skills.json');
     };
-    PortfolioService.prototype.getProject = function (name) {
-        var _this = this;
-        return rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].create(function (observer) {
-            return _this.http.get('assets/json/projects.json');
-        });
-    };
-    PortfolioService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_1__["Http"]])
-    ], PortfolioService);
-    return PortfolioService;
+    SkillsService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    ]; };
+    SkillsService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], SkillsService);
+    return SkillsService;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/project-single/project-single.component.css":
-/*!*************************************************************!*\
-  !*** ./src/app/project-single/project-single.component.css ***!
-  \*************************************************************/
+/***/ "./src/app/skills/skills.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/skills/skills.component.scss ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".cover{background-size: cover!important;}\r\n.label-info { margin-right: 5px;}"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NraWxscy9za2lsbHMuY29tcG9uZW50LnNjc3MifQ== */"
 
 /***/ }),
 
-/***/ "./src/app/project-single/project-single.component.html":
-/*!**************************************************************!*\
-  !*** ./src/app/project-single/project-single.component.html ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<section *ngIf=\"project\">\n    <h1>{{project.name}}</h1>\n    <a *ngIf=\"project.url\" href=\"{{project.url}}\" target=\"_blank\">Project Link</a>\n    <br>\n    <div *ngIf=\"project.description\" [innerHTML]=\"project.description\">\n        <br>\n    </div>\n    \n    <div *ngIf=\"project.technology\">\n        <h4>Technology:</h4>\n        <span class='label label-info' *ngFor=\"let tech of project.technology\">{{tech}}</span> &nbsp;\n        <br>\n        <br>\n    </div>\n    \n    <div class=\"row\" *ngIf='project.thumbnails'>\n        <!-- if array -->\n        <ng-container *ngIf='isObject(project.thumbnails)'>\n            <div class=\"col-xs-6 col-md-3\" *ngFor=\"let thumbnail of project.thumbnails\">\n                <a href=\"{{thumbnail}}\" target=\"_blank\" class=\"thumbnail\" data-fancybox=\"gallery\">\n                    <div class=\"cover\" style=\"height: 200px;\" [style.background]=\"'url('+thumbnail+')'\"></div>\n                </a>\n            </div>\n        </ng-container>\n        <!-- If string -->\n        <ng-container *ngIf='!isObject(project.thumbnails)'>\n            <div class=\"col-xs-6 col-md-3\">\n                <a href=\"{{project.thumbnails}}\" target=\"_blank\" class=\"thumbnail\" data-fancybox=\"gallery\">\n                    <div class=\"cover\" style=\"height: 200px;\" [style.background]=\"'url('+project.thumbnails+')'\"></div>\n                </a>\n            </div>\n        </ng-container>\n    </div>\n\n    <div  *ngIf=\"project.tag\">\n        <h4>Tags:</h4>\n        <span class=\"badge\">{{project.tag}}</span>\n    </div>\n    <br>\n</section>"
-
-/***/ }),
-
-/***/ "./src/app/project-single/project-single.component.ts":
-/*!************************************************************!*\
-  !*** ./src/app/project-single/project-single.component.ts ***!
-  \************************************************************/
-/*! exports provided: ProjectSingleComponent */
+/***/ "./src/app/skills/skills.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/skills/skills.component.ts ***!
+  \********************************************/
+/*! exports provided: SkillsComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectSingleComponent", function() { return ProjectSingleComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillsComponent", function() { return SkillsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _skills_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../skills.service */ "./src/app/skills.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SkillsComponent = /** @class */ (function () {
+    function SkillsComponent(skills) {
+        this.skills = skills;
+        this.experience = [];
+        this.skillset = [];
+    }
+    /*
+    * Init Method
+    */
+    SkillsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // Get skills from json file
+        this.skills.get()
+            .subscribe(function (data) {
+            _this.experience = data.experience;
+            _this.skillset = data.skillset;
+        });
+    };
+    SkillsComponent.ctorParameters = function () { return [
+        { type: _skills_service__WEBPACK_IMPORTED_MODULE_1__["SkillsService"] }
+    ]; };
+    SkillsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-skills',
+            template: __webpack_require__(/*! raw-loader!./skills.component.html */ "./node_modules/raw-loader/index.js!./src/app/skills/skills.component.html"),
+            styles: [__webpack_require__(/*! ./skills.component.scss */ "./src/app/skills/skills.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_skills_service__WEBPACK_IMPORTED_MODULE_1__["SkillsService"]])
+    ], SkillsComponent);
+    return SkillsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/work.service.ts":
+/*!*********************************!*\
+  !*** ./src/app/work.service.ts ***!
+  \*********************************/
+/*! exports provided: WorkService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WorkService", function() { return WorkService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var WorkService = /** @class */ (function () {
+    function WorkService(http) {
+        this.http = http;
+    }
+    WorkService.prototype.get = function () {
+        return this.http.get('./assets/works.json');
+    };
+    WorkService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    ]; };
+    WorkService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], WorkService);
+    return WorkService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/work/work.component.scss":
+/*!******************************************!*\
+  !*** ./src/app/work/work.component.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".workthumb img {\n  height: 250px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: top;\n     object-position: top; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd29yay9EOlxcd2FtcFxcd3d3XFxqYW1lc2pvbXVhZC5naXRodWIuZGV2L3NyY1xcYXBwXFx3b3JrXFx3b3JrLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLFdBQVc7RUFDWCxvQkFBaUI7S0FBakIsaUJBQWlCO0VBQ2pCLHVCQUFvQjtLQUFwQixvQkFBb0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3dvcmsvd29yay5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi53b3JrdGh1bWIgaW1ne1xyXG4gICAgaGVpZ2h0OiAyNTBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgb2JqZWN0LWZpdDogY292ZXI7XHJcbiAgICBvYmplY3QtcG9zaXRpb246IHRvcDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/work/work.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/work/work.component.ts ***!
+  \****************************************/
+/*! exports provided: WorkComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WorkComponent", function() { return WorkComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _portfolio_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../portfolio.service */ "./src/app/portfolio.service.ts");
+/* harmony import */ var _work_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../work.service */ "./src/app/work.service.ts");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -683,21 +868,22 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-var ProjectSingleComponent = /** @class */ (function () {
-    function ProjectSingleComponent(route, Project) {
+
+var WorkComponent = /** @class */ (function () {
+    function WorkComponent(route, workService) {
         var _this = this;
+        this.workService = workService;
+        this.work = [];
         route.params.subscribe(function (params) {
-            Project.getPortfolio()
-                .subscribe(function (response) {
-                _this.project = _this.getProject(params.name, response.json());
-                console.log(typeof _this.project.thumbnails === 'object');
+            _this.workService.get().subscribe(function (response) {
+                _this.work = _this.getProject(params.route, response);
             }, function (error) { return console.log(error); });
         });
     }
-    ProjectSingleComponent.prototype.ngOnInit = function () { };
-    ProjectSingleComponent.prototype.ngAfterViewInit = function () {
-        $(document).ready(function () {
-            $("a.thumbnail").fancybox({
+    WorkComponent.prototype.ngOnInit = function () { };
+    WorkComponent.prototype.ngAfterViewInit = function () {
+        jquery__WEBPACK_IMPORTED_MODULE_3__(document).ready(function () {
+            jquery__WEBPACK_IMPORTED_MODULE_3__("a.fancybox").fancybox({
                 buttons: [
                     "share",
                     "slideShow",
@@ -711,63 +897,53 @@ var ProjectSingleComponent = /** @class */ (function () {
             });
         });
     };
-    ProjectSingleComponent.prototype.getProject = function (name, data) {
+    WorkComponent.prototype.getProject = function (name, data) {
         return data.filter(function (obj) {
             return obj.route === name;
         })[0];
     };
-    ProjectSingleComponent.prototype.isObject = function (val) {
-        return typeof val === 'object';
-    };
-    ProjectSingleComponent = __decorate([
+    WorkComponent.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] },
+        { type: _work_service__WEBPACK_IMPORTED_MODULE_2__["WorkService"] }
+    ]; };
+    WorkComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-project-single',
-            template: __webpack_require__(/*! ./project-single.component.html */ "./src/app/project-single/project-single.component.html"),
-            styles: [__webpack_require__(/*! ./project-single.component.css */ "./src/app/project-single/project-single.component.css")]
+            selector: 'app-work',
+            template: __webpack_require__(/*! raw-loader!./work.component.html */ "./node_modules/raw-loader/index.js!./src/app/work/work.component.html"),
+            styles: [__webpack_require__(/*! ./work.component.scss */ "./src/app/work/work.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _portfolio_service__WEBPACK_IMPORTED_MODULE_2__["PortfolioService"]])
-    ], ProjectSingleComponent);
-    return ProjectSingleComponent;
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _work_service__WEBPACK_IMPORTED_MODULE_2__["WorkService"]])
+    ], WorkComponent);
+    return WorkComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/project/project.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/project/project.component.css ***!
-  \***********************************************/
+/***/ "./src/app/works/works.component.scss":
+/*!********************************************!*\
+  !*** ./src/app/works/works.component.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".work img {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  height: 240px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: top;\n     object-position: top; }\n\n.work:hover img {\n  opacity: 0.3; }\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center; }\n\n.work:hover .middle {\n  opacity: 1; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd29ya3MvRDpcXHdhbXBcXHd3d1xcamFtZXNqb211YWQuZ2l0aHViLmRldi9zcmNcXGFwcFxcd29ya3NcXHdvcmtzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksVUFBVTtFQUNWLGNBQWM7RUFDZCxXQUFXO0VBQ1gsWUFBWTtFQUNaLG9CQUFvQjtFQUNwQixtQ0FBMkI7VUFBM0IsMkJBQTJCO0VBQzNCLGFBQWE7RUFDYixvQkFBaUI7S0FBakIsaUJBQWlCO0VBQ2pCLHVCQUFvQjtLQUFwQixvQkFBb0IsRUFBQTs7QUFFeEI7RUFDSSxZQUFZLEVBQUE7O0FBRWhCO0VBQ0ksb0JBQW9CO0VBQ3BCLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCx3Q0FBZ0M7VUFBaEMsZ0NBQWdDO0VBQ2hDLG9DQUFvQztFQUNwQyxrQkFBa0IsRUFBQTs7QUFFdEI7RUFDSSxVQUFVLEVBQUEiLCJmaWxlIjoic3JjL2FwcC93b3Jrcy93b3Jrcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi53b3JrIGltZyB7XHJcbiAgICBvcGFjaXR5OiAxO1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogYXV0bztcclxuICAgIHRyYW5zaXRpb246IC41cyBlYXNlO1xyXG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gICAgaGVpZ2h0OiAyNDBweDtcclxuICAgIG9iamVjdC1maXQ6IGNvdmVyO1xyXG4gICAgb2JqZWN0LXBvc2l0aW9uOiB0b3A7XHJcbn1cclxuLndvcms6aG92ZXIgaW1nIHtcclxuICAgIG9wYWNpdHk6IDAuMztcclxufVxyXG4ubWlkZGxlIHtcclxuICAgIHRyYW5zaXRpb246IC41cyBlYXNlO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgbGVmdDogNTAlO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLndvcms6aG92ZXIgLm1pZGRsZSB7XHJcbiAgICBvcGFjaXR5OiAxO1xyXG59Il19 */"
 
 /***/ }),
 
-/***/ "./src/app/project/project.component.html":
-/*!************************************************!*\
-  !*** ./src/app/project/project.component.html ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!-- Template @home -->\n<ng-container *ngIf=\"currentRoute==='/'\">\n    <div class=\"wrap\" [style.background]=\"setFeatureBackground(project.thumbnails)\">\n        <div class=\"inner\">\n            <a href=\"#\" class=\"type\"><small>{{project.tag}}</small></a>\n            <a routerLink=\"{{'/project/'+project.route}}\" class=\"title\">{{project.name}}</a>\n        </div>\n    </div>\n</ng-container>"
-
-/***/ }),
-
-/***/ "./src/app/project/project.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/project/project.component.ts ***!
-  \**********************************************/
-/*! exports provided: ProjectComponent */
+/***/ "./src/app/works/works.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/works/works.component.ts ***!
+  \******************************************/
+/*! exports provided: WorksComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectComponent", function() { return ProjectComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WorksComponent", function() { return WorksComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _work_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../work.service */ "./src/app/work.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -779,237 +955,39 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-var ProjectComponent = /** @class */ (function () {
-    function ProjectComponent(route) {
-        this.currentRoute = route.url;
+var WorksComponent = /** @class */ (function () {
+    function WorksComponent(work) {
+        this.work = work;
+        this.works = [];
     }
-    ProjectComponent.prototype.ngOnInit = function () { };
-    ProjectComponent.prototype.getUrl = function (url) {
-        if (!url)
-            return '#';
-        return 'project/' + url;
-    };
-    ProjectComponent.prototype.setFeatureBackground = function (thumbnails) {
-        if (typeof thumbnails === 'undefined')
-            return false;
-        if (typeof thumbnails === 'object') {
-            return 'url(' + (thumbnails[0]) + ')';
-            ;
-        }
-        return 'url(' + (thumbnails) + ')';
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-        __metadata("design:type", Object)
-    ], ProjectComponent.prototype, "project", void 0);
-    ProjectComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-project',
-            template: __webpack_require__(/*! ./project.component.html */ "./src/app/project/project.component.html"),
-            styles: [__webpack_require__(/*! ./project.component.css */ "./src/app/project/project.component.css")]
-        }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
-    ], ProjectComponent);
-    return ProjectComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/projects/projects.component.css":
-/*!*************************************************!*\
-  !*** ./src/app/projects/projects.component.css ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".project .cover{\r\n    background-size: cover!important;\r\n    width: 100%;\r\n    height: 28.5vh;\r\n    overflow: hidden;\r\n}\r\n\r\n.project .title{\r\n    text-decoration: none;\r\n    color: #fff;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    height: 100%;\r\n    background: rgba(24, 29, 45, 0.8);\r\n}\r\n\r\n.project:hover .title{\r\n    background: none!important;\r\n    transition: all 0.3s ease-in-out;\r\n}\r\n\r\n.project .grad{\r\n    background: #1A2980;\r\n    background: linear-gradient(to right, #26D0CE, #1A2980);    \r\n}"
-
-/***/ }),
-
-/***/ "./src/app/projects/projects.component.html":
-/*!**************************************************!*\
-  !*** ./src/app/projects/projects.component.html ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<section class=\"row\" *ngIf=\"projects\">\n    <div class=\"col-sm-6 col-md-4 col-lg-3 project\" *ngFor=\"let project of projects\">\n        <div class=\"cover {{setBG(project.thumbnails)?'':'grad'}}\" [style.background]=\"setBG(project.thumbnails)\">\n            <a class=\"title\" routerLink=\"{{'/project/'+project.route}}\">{{project.name}}</a>\n        </div>\n    </div>\n</section>\n"
-
-/***/ }),
-
-/***/ "./src/app/projects/projects.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/projects/projects.component.ts ***!
-  \************************************************/
-/*! exports provided: ProjectsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsComponent", function() { return ProjectsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _portfolio_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../portfolio.service */ "./src/app/portfolio.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ProjectsComponent = /** @class */ (function () {
-    function ProjectsComponent(portfolioService) {
-        this.portfolioService = portfolioService;
-    }
-    ProjectsComponent.prototype.ngOnInit = function () {
+    WorksComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.portfolioService
-            .getPortfolio()
-            .subscribe(function (response) { return _this.onProject(response); }, function (error) { return console.log(error); });
+        // Get Works from json file
+        this.work.get()
+            .subscribe(function (data) {
+            _this.works = data;
+        });
     };
-    ProjectsComponent.prototype.onProject = function (res) {
-        this.projects = res.json();
-    };
-    ProjectsComponent.prototype.setBG = function (thumbnails) {
+    WorksComponent.prototype.getThumb = function (thumbnails) {
         if (typeof thumbnails === 'undefined')
             return false;
         if (typeof thumbnails === 'object') {
-            return 'url(' + (thumbnails[0]) + ')';
-            ;
+            return thumbnails[0];
         }
-        return 'url(' + (thumbnails) + ')';
+        return thumbnails;
     };
-    ProjectsComponent = __decorate([
+    WorksComponent.ctorParameters = function () { return [
+        { type: _work_service__WEBPACK_IMPORTED_MODULE_1__["WorkService"] }
+    ]; };
+    WorksComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-projects',
-            template: __webpack_require__(/*! ./projects.component.html */ "./src/app/projects/projects.component.html"),
-            styles: [__webpack_require__(/*! ./projects.component.css */ "./src/app/projects/projects.component.css")]
+            selector: 'app-works',
+            template: __webpack_require__(/*! raw-loader!./works.component.html */ "./node_modules/raw-loader/index.js!./src/app/works/works.component.html"),
+            styles: [__webpack_require__(/*! ./works.component.scss */ "./src/app/works/works.component.scss")]
         }),
-        __metadata("design:paramtypes", [_portfolio_service__WEBPACK_IMPORTED_MODULE_1__["PortfolioService"]])
-    ], ProjectsComponent);
-    return ProjectsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/sidebar-left/sidebar-left.component.html":
-/*!**********************************************************!*\
-  !*** ./src/app/sidebar-left/sidebar-left.component.html ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-side\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button class=\"navbar-toggle\" data-target=\".navbar-collapse\" data-toggle=\"collapse\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n    </div>\n    <div class=\"navbar-collapse collapse\" aria-expanded=\"false\" style=\"height: 1px;\">\n      <ul class=\"nav navbar-nav\">\n        <li>\n          <div class=\"profile\">\n            <div class=\"text-center\">\n              <img src=\"/assets/images/profile.png\" alt=\"Profile image\" />\n            </div>\n          </div>\n        </li>\n        <li routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\"><a routerLink=\"/\">Home</a></li>\n        <li routerLinkActive=\"active\"><a routerLink=\"/projects\">Works</a></li>\n        <li [routerLinkActive]=\"['active']\"><a routerLink=\"/awards\">Awards</a></li>\n        <li routerLinkActive=\"active\"><a routerLink=\"/about\">About Me</a></li>\n        <li><a class=\"contact\" href=\"mailTo:st.james.jomuad@gmail.com\">Contact Me</a></li>\n        <li routerLinkActive=\"active\"><a routerLink=\"/terms-and-conditions\">Terms & Conditions</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
-
-/***/ }),
-
-/***/ "./src/app/sidebar-left/sidebar-left.component.ts":
-/*!********************************************************!*\
-  !*** ./src/app/sidebar-left/sidebar-left.component.ts ***!
-  \********************************************************/
-/*! exports provided: SidebarLeftComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidebarLeftComponent", function() { return SidebarLeftComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var SidebarLeftComponent = /** @class */ (function () {
-    function SidebarLeftComponent() {
-    }
-    SidebarLeftComponent.prototype.ngOnInit = function () {
-    };
-    SidebarLeftComponent.prototype.onClick = function (event) {
-        console.log(event);
-    };
-    SidebarLeftComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-sidebar-left',
-            template: __webpack_require__(/*! ./sidebar-left.component.html */ "./src/app/sidebar-left/sidebar-left.component.html")
-        }),
-        __metadata("design:paramtypes", [])
-    ], SidebarLeftComponent);
-    return SidebarLeftComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/terms-conditions/terms-conditions.component.css":
-/*!*****************************************************************!*\
-  !*** ./src/app/terms-conditions/terms-conditions.component.css ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/terms-conditions/terms-conditions.component.html":
-/*!******************************************************************!*\
-  !*** ./src/app/terms-conditions/terms-conditions.component.html ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"flex-wrapper\">\n  <section class=\"col-md-8\">\n    <h2>Terms of Service</h2>\n    \n    <h3>Terms</h3>\n    <p>By accessing the website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>\n    \n    <h3>Use License</h3>\n    <ol type=\"a\">\n       <li>Permission is granted to temporarily download one copy of the materials (information or software) on jamesjomuad.github.io's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n       <ol type=\"i\">\n           <li>modify or copy the materials;</li>\n           <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>\n           <li>attempt to decompile or reverse engineer any software contained on jamesjomuad.github.io's website;</li>\n           <li>remove any copyright or other proprietary notations from the materials; or</li>\n           <li>transfer the materials to another person or \"mirror\" the materials on any other server.</li>\n       </ol>\n        </li>\n       <li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by jamesjomuad.github.io at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>\n    </ol>\n    \n    <h3>Disclaimer</h3>\n    <ol type=\"a\">\n       <li>The materials on jamesjomuad.github.io's website are provided on an 'as is' basis. jamesjomuad.github.io makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>\n       <li>Further, jamesjomuad.github.io does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>\n    </ol>\n  \n    <h3>Limitations</h3>\n    <p>In no event shall jamesjomuad.github.io or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on jamesjomuad.github.io's website, even if jamesjomuad.github.io or a jamesjomuad.github.io authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>\n    \n    <h3>Accuracy of materials</h3>\n    <p>The materials appearing on jamesjomuad.github.io website could include technical, typographical, or photographic errors. jamesjomuad.github.io does not warrant that any of the materials on its website are accurate, complete or current. jamesjomuad.github.io may make changes to the materials contained on its website at any time without notice. However jamesjomuad.github.io does not make any commitment to update the materials.</p>\n   \n    <h3>Links</h3>\n    <p>jamesjomuad.github.io has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by jamesjomuad.github.io of the site. Use of any such linked website is at the user's own risk.</p>\n   \n    <h3>Modifications</h3>\n    <p>jamesjomuad.github.io may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>\n   \n    <h3>Your acceptance of these terms</h3>\n    <p>By using this Site, you signify your acceptance of this policy and terms of service. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.</p>\n  \n    <h3>Governing Law</h3>\n    <p>These terms and conditions are governed by and construed in accordance with the laws of Philippines and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>\n  </section>\n  \n</div>"
-
-/***/ }),
-
-/***/ "./src/app/terms-conditions/terms-conditions.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/terms-conditions/terms-conditions.component.ts ***!
-  \****************************************************************/
-/*! exports provided: TermsConditionsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TermsConditionsComponent", function() { return TermsConditionsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TermsConditionsComponent = /** @class */ (function () {
-    function TermsConditionsComponent() {
-    }
-    TermsConditionsComponent.prototype.ngOnInit = function () {
-    };
-    TermsConditionsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-terms-conditions',
-            template: __webpack_require__(/*! ./terms-conditions.component.html */ "./src/app/terms-conditions/terms-conditions.component.html"),
-            styles: [__webpack_require__(/*! ./terms-conditions.component.css */ "./src/app/terms-conditions/terms-conditions.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], TermsConditionsComponent);
-    return TermsConditionsComponent;
+        __metadata("design:paramtypes", [_work_service__WEBPACK_IMPORTED_MODULE_1__["WorkService"]])
+    ], WorksComponent);
+    return WorksComponent;
 }());
 
 
@@ -1026,13 +1004,20 @@ var TermsConditionsComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
 var environment = {
     production: false
 };
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
 
 
 /***/ }),
@@ -1057,7 +1042,8 @@ __webpack_require__.r(__webpack_exports__);
 if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"]);
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(function (err) { return console.error(err); });
 
 
 /***/ }),
@@ -1069,7 +1055,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\jamesjomuad.github.io\project-VI\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\wamp\www\jamesjomuad.github.dev\src\main.ts */"./src/main.ts");
 
 
 /***/ })
