@@ -1,5 +1,25 @@
 [
     {
+        "name": "Aero Marketing Solutions",
+        "route": "aeromarketingsolutions",
+        "tag": "Web Application",
+        "technology": [
+            "Octobercms",
+            "JQuery",
+            "SSH",
+            "Lightsail",
+            "Webmin",
+            "MDB Bootstrap"
+        ],
+        "description": "<p>Started from MDB Bootstrap theme, integrate the template into Octobercms system.</p><p>This website is for a startup company base in New Zealand.</p> <p>Project Url: <a href='http:// aeromarketingsolutions.com/' target='_blank'>aeromarketingsolutions.com</a></p>",
+        "thumbnails": [
+            "/assets/images/works/aeromarketingsolutions/a.jpg",
+            "/assets/images/works/aeromarketingsolutions/b.jpg",
+            "/assets/images/works/aeromarketingsolutions/c.jpg",
+            "/assets/images/works/aeromarketingsolutions/d.jpg"
+        ]
+    },
+    {
         "name": "Aeroparks",
         "route": "aeroparks",
         "tag": "Web Application",
@@ -10,7 +30,7 @@
             "Laravel",
             "Php"
         ],
-        "description": "<p>A Web App parking management software. Using octobercms that is a laravel base framework. Integrates barcode reading and termal printer.</p><p>This project is getting me excite along the way cause this kind of framework is what ive been looking for. It gained me knowledge and felt confident. Its principle is like wordpress but in new technology.</p>",
+        "description": "<p>A Web App parking management software. Using octobercms that is a laravel base framework. Integrates barcode reading and termal printer.</p> <p>This project is getting me excite along the way cause this kind of framework is what ive been looking for. It gained me knowledge and felt confident. Its principle is like wordpress but in new technology.</p> <p>Project Link:&nbsp;<a href='http://aeroparks.ml/' target='_blank'>http://aeroparks.ml/</a></p>",
         "thumbnails": [
             "/assets/images/works/aeroparks/040-Dashboard-Aeroparks.jpg",
             "/assets/images/works/aeroparks/041-Notifications-Aeroparks.jpg",
@@ -42,7 +62,7 @@
             "AWS",
             "GIT"
         ],
-        "description": "<p>SLYCE Gateway is a dashboard interface that provides merchants with payment gateway access. This web application will enable users to run sales and refunds, view reports, and use several other ancillary tools.</p> <strong>Role & Responsibilities</strong> <ul> <li>Domain name setup</li> <li>Server Monitoring</li> <li>Server Setup</li> <li>Backend PHP/Laravel</li> <li>SQL Queries</li> <li>DB/Schema Structure</li> <li>Front-end Bootstrap, Javascript/JQuery</li> <li>Aws SES Setup</li> <li>Aws S3 Setup</li> <li>Git</li> </ul>",
+        "description": "<p>SLYCE Gateway is a dashboard interface that provides merchants with payment gateway access. This web application will enable users to run sales and refunds, view reports, and use several other ancillary tools.</p> <strong>Role & Responsibilities</strong> <ul> <li>Domain name setup</li> <li>Server Monitoring</li> <li>Server Setup</li> <li>Backend PHP/Laravel</li> <li>SQL Queries</li> <li>DB/Schema Structure</li> <li>Front-end Bootstrap, Javascript/JQuery</li> <li>Aws SES Setup</li> <li>Aws S3 Setup</li> <li>Git</li> </ul> <p>Project URL: <a href='https://www.slycegateway.com' target='_blank'>www.slycegateway.com</a></p>",
         "thumbnails": [
             "/assets/images/works/slycegateway/home.png",
             "/assets/images/works/slycegateway/Customers.png",
@@ -80,7 +100,7 @@
             "AWS",
             "GIT"
         ],
-        "description": "A Restful api service that create and send electronic invoices with pdf attachment & send secured link to customers. Customize with just a few clicks and get paid faster using payment page.",
+        "description": "<p>A Restful api service that create and send electronic invoices with pdf attachment & send secured link to customers. Customize with just a few clicks and get paid faster using payment page.</p><p>Project URL: <a href='https://email-invoice.com/' target='_blank'>email-invoice.com</a></p>",
         "thumbnails": [
             "/assets/images/works/email-invoice/home.png",
             "/assets/images/works/email-invoice/invoice.png"
