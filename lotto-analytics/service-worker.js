@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "lotto-analytics/precache-manifest.3c3332e3095f730385af8959f5d5f97f.js"
+  "precache-manifest.cdcedee14dd1237c30364dc73ef5c1cc.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "lotto-analytics"});
