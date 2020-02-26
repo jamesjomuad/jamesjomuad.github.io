@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/chunk-579e1ea3.36ca82f6.css"
   },
   {
-    "revision": "3587229c7ed1850a1ff9",
+    "revision": "22f0960ea20d6bb2958c",
     "url": "css/chunk-cc692000.e435cffc.css"
   },
   {
@@ -44,12 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "data/swertres/2020.txt"
   },
   {
-    "revision": "d5818b09984ecfc631fb7f46cbaf7d67",
+    "revision": "2e08e0becdddfb88676f143279765bba",
     "url": "index.html"
   },
   {
-    "revision": "d7987cca493dd5827996",
-    "url": "js/app.aa598fb4.js"
+    "revision": "7ca684455b0f1c128b9f",
+    "url": "js/app.affaee24.js"
   },
   {
     "revision": "f3a3861624c5555c3501",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/chunk-579e1ea3.44017d70.js"
   },
   {
-    "revision": "3587229c7ed1850a1ff9",
-    "url": "js/chunk-cc692000.d6098162.js"
+    "revision": "22f0960ea20d6bb2958c",
+    "url": "js/chunk-cc692000.f3ecd794.js"
   },
   {
     "revision": "cb6e2dbb8327ddce5685",
@@ -80,7 +80,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/chunk-vendors.c2ee2311.js"
   },
   {
-    "revision": "4a626f3d356b5523caac3074ca0b3942",
+    "revision": "d621b8301bfe827e6c401e09b8549afb",
     "url": "manifest.json"
   },
   {

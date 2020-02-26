@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.5769353d6a9ced6bee20899c1420222a.js"
+  "precache-manifest.3718fa6ccb3d01e91e185d04d1f3ca73.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "lotto-analytics"});
+workbox.core.setCacheNameDetails({prefix: "lottolytics"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
