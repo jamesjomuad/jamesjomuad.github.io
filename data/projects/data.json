@@ -1,5 +1,19 @@
 [
     {
+        "title": "Lotto Analytics",
+        "url": "http://jamesjomuad.github.io/lotto-analytics",
+        "tags": [
+            "Vue",
+            "NodeJS"
+        ],
+        "description": "<p>A PWA(Progressive Web Application) buid to help analyze Hot and Cold numbers base on the old data output.It uses a rest api communication between application. Im just playing around on this project. My goal to this project is to help people minimize the paper used during their calculation.</p>",
+        "images": [
+            "/data/projects/lottolytics/lotto-analytics.jpg",
+            "/data/projects/lottolytics/lotto-analytics-2.jpg",
+            "/data/projects/lottolytics/lotto-analytics-3.jpg"
+        ]
+    },
+    {
         "title": "69clothing",
         "tags": [
             "Wordpress",
@@ -12,8 +26,7 @@
             "/data/projects/69clothing/collections.jpg",
             "/data/projects/69clothing/about.jpg",
             "/data/projects/69clothing/contact.jpg"
-        ],
-        "sale": true
+        ]
     },
     {
         "title": "Kusina Uno Website",
