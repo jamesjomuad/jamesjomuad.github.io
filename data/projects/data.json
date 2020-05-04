@@ -6,14 +6,14 @@
             "eCommerce",
             "Woocomerce"
         ],
-        "description": "<p>This project is for SALE. Contact me to get this website.</p><p>The theme is packed with lots of pre-designed pages to display your main services, your store’s range, its gallery and its news, etc. It features two styles of Homepage – fullwidth and boxed, as well as boxed and fullwidth Store pages.</p><ul><li>4 beautiful homepage layouts</li> <li>Outstanding Collections & Gallery premade pages</li> <li>Advanced Contact Forms</li> <li>Full Woocommerce store compatibility</li></ul><p>More details here: <a href='https://themeforest.net/item/69-clothing-brand-store-fashion-boutique/20323909' target='_blank'>69clothing</a></p>",
+        "description": "<p>The theme is packed with lots of pre-designed pages to display your main services, your store’s range, its gallery and its news, etc. It features two styles of Homepage – fullwidth and boxed, as well as boxed and fullwidth Store pages.</p><ul><li>4 beautiful homepage layouts</li> <li>Outstanding Collections & Gallery premade pages</li> <li>Advanced Contact Forms</li> <li>Full Woocommerce store compatibility</li></ul><p>More details here: <a href='https://themeforest.net/item/69-clothing-brand-store-fashion-boutique/20323909' target='_blank'>69clothing</a></p>",
         "images": [
             "/data/projects/69clothing/home.jpg",
             "/data/projects/69clothing/collections.jpg",
             "/data/projects/69clothing/about.jpg",
             "/data/projects/69clothing/contact.jpg"
         ],
-        "sale": true
+        "sale": false
     },
     {
         "title": "Kusina Uno Website",
