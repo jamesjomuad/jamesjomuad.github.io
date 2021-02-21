@@ -1,5 +1,39 @@
 [
     {
+        "title": "Rising Star Properties",
+        "tags": [
+            "Wordpress","Elementor"
+        ],
+        "description": "<p>&nbsp;</p> <p>This is a theme from ThemeForest. Responsible for updating all the dummy contents and images. Created sitemap and installed needed plugins.&nbsp;Optimize images for performance and get a high score in google page speed.</p> <p>Dev: <a title='Rising Star Properties' href='https://rsp.tulumi.com/' target='_blank'>rsp.tulumi.com</a></p>",
+        "images": [
+            "/data/projects/rsp.tulumi.com/About Us - Rising Star Properties - rsp.tulumi.com.jpg",
+            "/data/projects/rsp.tulumi.com/Construction Management - Rising Star Properties - rsp.tulumi.com.jpg",
+            "/data/projects/rsp.tulumi.com/Retirement Communities - Rising Star Properties - rsp.tulumi.com.jpg",
+            "/data/projects/rsp.tulumi.com/Senior Living Construction - Rising Star Properties - rsp.tulumi.com.jpg"
+        ]
+    },
+    {
+        "title": "CDI Apparel",
+        "tags": [
+            "Wordpress",
+            "eCommerce",
+            "Woocomerce",
+            "Elementor"
+        ],
+        "description": "<p>Woocomerce in WordPress with thousands of products. Responsible for customizing checkout forms and bulk editing the products. Create landing pages using elementor.</p><p>Dev: <a href='https://cdi.tulumi.com/' target='_blank'>https://cdi.tulumi.com/</a></p> <p>Live: <a title='cdiapparel' href='https://cdiapparel.com/'target='_blank'>https://cdiapparel.com/</a></p>",
+        "images": [
+            "/data/projects/cdi.tulumi.com/Home - CDI – School Sports Apparel - cdi.tulumi.com.jpg",
+            "/data/projects/cdi.tulumi.com/cdiapparel.jpg",
+            "/data/projects/cdi.tulumi.com/Cool Down Pack - CDI – School Sports Apparel - cdi.tulumi.com.jpg",
+            "/data/projects/cdi.tulumi.com/Mascot Graphics - CDI – School Sports Apparel - cdi.tulumi.com.jpg",
+            "/data/projects/cdi.tulumi.com/School Face Mask - CDI – School Sports Apparel - cdi.tulumi.com.jpg",
+            "/data/projects/cdi.tulumi.com/School Spiritwear - CDI – School Sports Apparel - cdi.tulumi.com.jpg",
+            "/data/projects/cdi.tulumi.com/Spirit Packs - CDI – School Sports Apparel - cdi.tulumi.com.jpg",
+            "/data/projects/cdi.tulumi.com/Team Packs Basketball Archives - CDI – School Sports Apparel - cdi.tulumi.com.jpg",
+            "/data/projects/cdi.tulumi.com/Contact Us - CDI – School Sports Apparel - cdi.tulumi.com.jpg"
+        ]
+    },
+    {
         "title": "69clothing",
         "tags": [
             "Wordpress",
