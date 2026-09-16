@@ -1,0 +1,1 @@
+import{n as e}from"./_wMNbCle.js";function t(t){e({link:t.map(e=>({rel:`preload`,as:`image`,href:e}))})}export{t};
